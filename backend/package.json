@@ -1,0 +1,13 @@
+{
+  "name": "backend-ione-cavalcante-engineering",
+  "version": "1.0.0",
+  "description": "Backend for Website Ione Cavalcante Engineering",
+  "main": "index.js",
+  "repository": "https://github.com/Artur-Cavalcante/ione-cavalcante-engineering",
+  "author": "Artur-Cavalcante",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
