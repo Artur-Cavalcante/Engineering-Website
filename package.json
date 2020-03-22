@@ -6,8 +6,5 @@
   "repository": "https://github.com/Artur-Cavalcante/ione-cavalcante-engineering",
   "author": "Artur-Cavalcante",
   "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "private": false
 }
