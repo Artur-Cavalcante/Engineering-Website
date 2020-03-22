@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://ionecavalcanteengenharia.com.br">
-        <img width="800px" height="450px" src="https://github.com/Artur-Cavalcante/ione-cavalcante-engineering/tree/master/utils/IoneCavalcanteEngenharia.jpg" >
+        <img width="650px" height="300px" src="https://github.com/Artur-Cavalcante/ione-cavalcante-engineering/blob/master/utils/IoneCavalcanteEngenharia.jpg" >
     </a>
 
 </div>
