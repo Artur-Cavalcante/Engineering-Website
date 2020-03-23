@@ -1,7 +1,8 @@
 const { Router } = require('express');
+const EmailController = require('./controllers/EmailController.js');
 
 const routes = Router();
 
-routes.get('/', (resquest, response) => {return response.send('Hello Wolrd!')});
+routes.post('/contato', EmailController.send);
 
 module.exports = routes;
