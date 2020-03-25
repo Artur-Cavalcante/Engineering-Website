@@ -7,7 +7,5 @@
   "author": "Artur-Cavalcante",
   "license": "MIT",
   "private": false,
-  "dependencies": {
-    "react-router-dom": "^5.1.2"
-  }
+  "dependencies": {}
 }
