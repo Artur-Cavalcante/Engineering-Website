@@ -3,17 +3,17 @@
   "name": "Ione Cavalcante Enhenharia",
   "icons": [
     {
-      "src": "IoneCavalcanteEngenheeringLogoNegativeWithBackground.ico",
+      "src": "IoneCavalcanteEngineeringLogoNegativeWithBackground.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "IoneCavalcanteEngenheeringLogoWithoutBackground.png",
+      "src": "IoneCavalcanteEngineeringLogoWithoutBackground.png",
       "type": "image/png",
       "sizes": "171x157"
     },
     {
-      "src": "IoneCavalcanteEngenheeringLogoWithBackground.png",
+      "src": "IoneCavalcanteEngineeringLogoWithBackground.png",
       "type": "image/png",
       "sizes": "171x157"
     }
