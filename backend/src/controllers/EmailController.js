@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-async function send(request, response){
+async function send(request, response, next){
     
     const userTransporter = 'arturcavalcante2014.p@hotmail.com';
     const passTransporter = 'yArturC6';
@@ -28,16 +28,21 @@ async function send(request, response){
         subject: 'Repassando E-mail',
         text: TextToReceiver,
     };
-    
-    await transporter.sendMail(mailOptions, (err, info) => {
-        if (err){
-            const resp = {error: err};
-            return response.json(resp);
-        }else{
-            const resp = {inf: info};
-            return response.json(resp);
-        };
-    });
+    try{
+        await transporter.sendMail(mailOptions, (err, info) => {
+            if (err){
+                const resp = {error: err};
+                return response.json(resp);
+            }else{
+                const resp = {inf: info};
+                return response.json(resp);
+            };
+        });
+    } catch(err){
+        const error = new Error(err);
+        error.httpStatusCode = 500;
+        return next(erro);
+    }
 };
 
 module.exports = { send };
