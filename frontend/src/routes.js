@@ -8,12 +8,12 @@ import About from './components/About.js';
 
 function Routes() {
     return (
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/servicos" component={Services} />
-                <Route path="/contato" component={Contact} />
-                <Route path="/sobre" component={About} />
-            </Switch>
+        <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/servicos" component={Services} />
+            <Route path="/contato" component={Contact} />
+            <Route path="/sobre" component={About} />
+        </Switch>
     );
 };
 
