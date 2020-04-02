@@ -1,10 +1,12 @@
 import React from 'react';
 
+import '../styles/output.css';
 import home_img from './images/home/home.svg'
 
 function Home(){
     return (
-        <section className="services-box">
+        <section 
+            id="services-box">
             <div className="services-box-1">
                 <div className="img">
                     {/* Colocar aqui a imagem como background para fazer o landing page, olha no learning */}

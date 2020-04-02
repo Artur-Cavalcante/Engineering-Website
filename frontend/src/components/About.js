@@ -1,4 +1,6 @@
 import React from 'react';
+import '../styles/output.css';
+
 
 import img_missao from './images/about/img_missao.svg';
 

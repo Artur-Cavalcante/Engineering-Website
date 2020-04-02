@@ -1,4 +1,6 @@
 import React from 'react';
+import '../styles/output.css';
+
 
 import nome_img from './images/contact/User1.svg'
 import e_mail_img from './images/contact/Email_negativa-12.svg'

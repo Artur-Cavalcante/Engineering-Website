@@ -1,5 +1,8 @@
 import React from 'react';
 
+import '../styles/output.css';
+
+
 import ReformasResidenciaisEComerciais from './images/services/ReformasResidenciaisEComerciais.svg';
 import ProjetosPrediaisEdeRede from './images/services/ProjetosPrediaisEdeRede.svg';
 import LevantamentoCadastral from './images/services/LevantamentoCadastral.svg';

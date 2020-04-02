@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import '../styles/output.css';
+
 
 import img_logo from './images/footer/Logo_Negativa.svg';
 import name_logo from './images/footer/IoneCavalcanteEngineeringLogoNameWithoutBackgroundFim.svg';
