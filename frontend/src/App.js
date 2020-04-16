@@ -10,8 +10,8 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div id="App" className="
-      w-fullz
-      grid grid-rows-1 
+      w-full
+      h-auto
       font-Lato
       " >
       <BrowserRouter>

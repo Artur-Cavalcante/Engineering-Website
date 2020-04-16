@@ -12,49 +12,166 @@ import github_logo from './images/footer/Github_Negativa.svg';
 
 function Footer() {
     return (
-        <footer>
-            <div className="logo-box">
-                <div className="img-logo-box">
-                    <img src={img_logo} alt="img-logo" />
+        <footer
+            className="
+            bg-second
+            h-auto
+            "
+        >
+            <div
+                id="logo-media-box"
+                className="
+                    p-1
+                    grid grid-cols-1
+                    
+                    md:grid md:grid-cols-2
+                    lg:grid lg:grid-cols-2
+                    xl:grid xl:grid-cols-2
+                    
+                "
+            >
+                <div 
+                    className="
+                        flex flex-row 
+                        h-full
+                        w-3/5
+                        
+                    "
+                >
+                    <div id="img-logo-box"
+                        className='self-center'
+                    >
+                        <a href="https://ionecavalcanteengenharia.com.br">
+                        <img 
+                            src={img_logo} 
+                            alt="img-logo" 
+                            className="
+                                w-16
+                            "
+                        />
+                        </a>
+                    </div>
+                    <div id="name-logo-box"
+                          className="self-end pb-1"
+                    >
+                        <a href="https://ionecavalcanteengenharia.com.br">
+
+                        <img 
+                            src={name_logo} 
+                            alt="name-logo" 
+                            className="
+                                w-64
+                            "
+                        />
+                        </a>
+                    </div>
                 </div>
-                <div className="name-logo-box">
-                    <img src={name_logo} alt="name-logo" />
+
+                <div 
+                    className="
+                        flex flex-row items-center justify-around
+                    "
+                >
+                    <div 
+                        id="instagram-box"
+
+                    >
+                        <a 
+                            href="https://instagram.com/eng.ionecavalcante/" 
+                            target="_blank"
+                            className="
+                                flex flex-col items-center justify-around
+
+                            "
+                        >
+                            <img 
+                                src={instagram_logo} 
+                                alt="instagram-logo" 
+                                className="
+                                    w-16
+                                
+                                "
+                            />
+                            <p className='text-sm'>Instagram</p>
+                        </a>
+                    </div>
+
+                    <div 
+                        id="e-mail-box"
+                        
+                    >
+                        <NavLink 
+                            to="/contato"  
+                            className="
+                                flex flex-col items-center justify-around
+
+                            "
+                        >
+                            <img 
+                                src={e_mail_logo} 
+                                alt="e-mail-logo" 
+                                className="
+                                    w-20
+                                "
+                            />
+                            <p className='text-sm'>E-mail</p>
+                        </NavLink>
+                    </div>
+
+                    <div className="phone-box">
+                        <NavLink 
+                            to="/contato"
+                            className="
+                                flex flex-col items-center justify-around
+
+                            "
+                        >
+                            <img 
+                                src={phone_logo} 
+                                alt="phone-logo" 
+                                className="
+                                    w-12
+                                " 
+                            />
+                            <p className='text-sm'>Telefone</p>
+                        </NavLink>
+                    </div>
+
+                    <div className="github-box">
+                        <a 
+                            href="http://github.com/Artur-Cavalcante/ione-cavalcante-engineering" 
+                            target="_blank" 
+                            className="
+                                flex flex-col items-center justify-around
+
+                            "
+                        >
+                            <img 
+                                src={github_logo} 
+                                alt="github-logo" 
+                                className="
+                                    w-12
+                                "
+                            />
+                            <p className='text-sm'>Github</p>
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
-            <div className="social-media-box">
-                <div className="instagram-box">
-                    <a href="https://instagram.com/eng.ionecavalcante/" target="_blank">
-                        <img src={instagram_logo} alt="instagram-logo" />
-                        <p>Instagram</p>
-                    </a>
-                </div>
-
-                <div className="e-mail-box">
-                        <NavLink to="/contato"  >
-                            <img src={e_mail_logo} alt="e-mail-logo" />
-                            <p>E-mail</p>
-                        </NavLink>
-                </div>
-
-                <div className="phone-box">
-                        <NavLink to="/contato"  >
-                            <img src={phone_logo} alt="phone-logo" />
-                            <p>Telefone</p>
-                        </NavLink>
-                </div>
-
-                <div className="github-box">
-                    <a href="http://github.com/Artur-Cavalcante/ione-cavalcante-engineering" target="_blank" >
-                        <img src={github_logo} alt="github-logo" />
-                        <p>Github</p>
-                    </a>
-                </div>
-
-            </div>
-
-            <div className="header-bar-both">
-                <a href="https://github.com/Artur-Cavalcante">&copy;2020 Artur-Cavalcante</a>
+            <div
+                id="footer-bar-both"
+                className="
+                flex flex-row items-center justify-center
+                bg-black
+                "
+            >
+                <a
+                    className="
+                        text-second
+                    "
+                    href="https://github.com/Artur-Cavalcante">&copy;2020 Artur-Cavalcante</a>
             </div>
         </footer>
     );

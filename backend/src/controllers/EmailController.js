@@ -40,6 +40,7 @@ async function send(request, response, next){
         });
     } catch(err){
         const error = new Error(err);
+        console.log(error);
         error.httpStatusCode = 500;
         return next(erro);
     }

@@ -12,71 +12,176 @@ import Auditoria from './images/services/Auditoria.svg';
 
 function Services() {
     return (
-        <section className="services-box">
-            <h1>
-                Serviços
-            </h1>
+        <div
+            className="
+                bg-bg_gray 
+                pb-20
+                pt-8
+                "
+        >
 
-            <div className="grid vai ser aqui">
-                <div>
-                    <div className="">
-                        <img src={ReformasResidenciaisEComerciais} alt="ReformasResidenciaisEComerciais" />
-                    </div>
-                    <h2 className="">
-                        Reformas Residênciais e Comerciais
-                    </h2>
+            <section
+                id="services-box"
+                className="
+                grid grid-rows-1 items-center justify-center
+                gap-8 
+                
+                "
+            >
+                <div 
+                    className="
+                        flex flex-row justify-center 
+                        "
+                        >
+
+                    <h1
+                        className=" 
+                        flex flex-row justify-center items-center
+                        text-center
+                        bg-primary
+
+                        w-64 h-12
+                        rounded-sm
+
+                        shadow-xl
+                        text-md
+                "
+                    >
+                        Serviços
+                </h1>
                 </div>
 
-                <div>
-                    <div className="">
-                        <img src={ProjetosPrediaisEdeRede} alt="ProjetosPrediaisEdeRede"/>
-                    </div>
-                    <h2 className="">
-                        Projetos Prediais e de Rede
+                <div
+                    className="
+                    grid grid-cols-3 gap-16
+                    
+            ">
+                    <div
+                        className="
+                        flex flex-col justify-center items-center
+                        text-second
+                        shadow-xl
+                        rounded-lg
+                        p-6
+                        w-64
+
+                    bg-white
+                    "
+                    >
+                        <div >
+                            <img src={ReformasResidenciaisEComerciais} alt="Reformas Residenciais" />
+                        </div>
+                        <h2 className="text-center">
+                            Reformas Residênciais <br />e Comerciais
                     </h2>
-                </div>
-
-
-                <div>
-                    <div className="">
-                        <img src={LevantamentoCadastral} alt="LevantamentoCadastral"/>
                     </div>
-                    <h2 className="">
-                        Levantamento Cadastral
+
+                    <div
+                        className="
+                    flex flex-col justify-center items-center
+                    text-second
+                    shadow-xl
+                    rounded-lg
+                    p-6
+                    w-64
+                    bg-white
+                    "
+
+                    >
+                        <div>
+                            <img src={ProjetosPrediaisEdeRede} alt="ProjetosPrediaisEdeRede" />
+                        </div>
+                        <h2 className="text-center">
+                            Projetos Prediais e de Rede
                     </h2>
-                </div>
-
-
-                <div>
-                    <div className="">
-                        <img src={Consultoria} alt="Consultoria"/>
                     </div>
-                    <h2 className="">
-                        Consultoria
+
+
+                    <div
+                        className="
+                    flex flex-col justify-center items-center
+                    text-second
+                    shadow-xl
+                    rounded-lg
+                    p-6
+                    w-64
+                    
+                    bg-white
+                        "
+                    >
+                        <div >
+                            <img src={LevantamentoCadastral} alt="LevantamentoCadastral" />
+                        </div>
+                        <h2 className="">
+                            Levantamento Cadastral
                     </h2>
-                </div>
-
-
-                <div>
-                    <div className="">
-                        <img src={Licitacao} alt="Licitacao"/>
                     </div>
-                    <h2 className="">
-                        Licitação
-                    </h2>
-                </div>
 
-                <div>
-                    <div className="">
-                        <img src={Auditoria} alt="Auditoria"/>
+
+                    <div
+                        className="
+                    flex flex-col justify-center items-center
+                    text-second
+                    shadow-xl
+                    rounded-lg
+                    p-6
+                    w-64
+
+                    bg-white
+                        "
+                    >
+                        <div>
+                            <img src={Consultoria} alt="Consultoria" />
+                        </div>
+                        <h2 className="">
+                            Consultoria
+                    </h2>
                     </div>
-                    <h2 className="">
-                        Auditoria
-                    </h2>
-                </div>
 
-            </div>
-        </section>
+
+                    <div
+                        className="
+                    flex flex-col justify-center items-center
+                    text-second
+                    shadow-xl
+                    rounded-lg
+                    p-6
+                    w-64
+
+                    bg-white
+                        "
+                    >
+                        <div>
+                            <img src={Licitacao} alt="Licitacao" />
+                        </div>
+                        <h2 className="">
+                            Licitação
+                    </h2>
+                    </div>
+
+                    <div
+                        className="
+                    flex flex-col justify-center items-center
+                    text-second
+                    shadow-xl
+                    rounded-lg
+                    p-6
+                    w-64
+
+                    bg-white
+                        "
+                    >
+                        <div className="">
+                            <img src={Auditoria} alt="Auditoria" />
+                        </div>
+                        <h2 className="">
+                            Auditoria
+                    </h2>
+                    </div>
+
+                </div>
+            </section >
+        </div>
     );
 };
 
