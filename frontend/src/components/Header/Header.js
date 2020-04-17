@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/output.css';
+import NavBar from './NavBar';
+import MenuBar from './MenuBar';
+import BackgroundMenuBar from './BackgroundMenuBar';
+import '../../styles/output.css';
 
-import IoneCavalcanteEngenhariaLogo from './images/header/IoneCavalcanteEngineeringLogoWithBackground.svg';
-import IoneCavalcanteEngenhariaLogoNameWithoutBackground from './images/header/IoneCavalcanteEngineeringLogoNameWithoutBackground.svg';
+import IoneCavalcanteEngenhariaLogo from '../images/header/IoneCavalcanteEngineeringLogoWithBackground.svg';
+import IoneCavalcanteEngenhariaLogoNameWithoutBackground from '../images/header/IoneCavalcanteEngineeringLogoNameWithoutBackground.svg';
 
 function Header() {
-  const [navInicioClass, setNavInicioClass] = useState('text-sm ' )
-  const [navServicosClass, setNavServicosClass] = useState('text-sm')
-  const [navContatoClass, setNavContatoClass] = useState('text-sm')
-  const [navSobreClass, setNavSobreClass] = useState('text-sm')
+  const [navInicioClass, setNavInicioClass] = useState('text-sm ' );
+  const [navServicosClass, setNavServicosClass] = useState('text-sm');
+  const [navContatoClass, setNavContatoClass] = useState('text-sm');
+  const [navSobreClass, setNavSobreClass] = useState('text-sm');
 
 
   function onHover(nav) {
@@ -20,11 +23,9 @@ function Header() {
       case 'servicos':
         setNavServicosClass('text-sm border-b-3p border-primary');
         break;
-
       case 'contato':
         setNavContatoClass('text-sm border-b-3p border-primary');
         break;
-
       case 'sobre':
         setNavSobreClass('text-sm border-b-3p border-primary');
         break;
@@ -41,11 +42,9 @@ function Header() {
       case 'servicos':
         setNavServicosClass('text-sm ');
         break;
-
       case 'contato':
         setNavContatoClass('text-sm ');
         break;
-
       case 'sobre':
         setNavSobreClass('text-sm ');
         break;
@@ -57,12 +56,10 @@ function Header() {
     <header
       className="
         bg-bg_white
-
         h-auto
       ">
       <div className="
         grid grid-cols-2
-     
         m-1
       ">
 
@@ -71,7 +68,6 @@ function Header() {
           className="
             flex flex-row items-center
             h-full
-            
           "
         >
           <div id="logo-img-box">
@@ -111,70 +107,9 @@ function Header() {
           </h1>
         </div>
 
-        <nav
-          className="
-            flex flex-row items-center justify-around
-            hidden
-            sm:inline-flex
-            md:inline-flex
-            lg:inline-flex
-            xl:inline-flex
-          "
-        >
-          <NavLink 
-            exact to="/" 
-            className={navInicioClass} 
-
-            onMouseEnter={() => onHover('inicio')} 
-            onMouseOut={() => offHover('inicio')}
-          
-            activeStyle={{
-              borderBottom: '3px solid #D49b7a',
-            }}
-
-            style={{outline: 0}}
-          > Início</NavLink>
-          <NavLink 
-            to="/servicos"
-            className={navServicosClass} 
-
-            onMouseEnter={() => onHover('servicos')} 
-            onMouseOut={() => offHover('servicos')}
-          
-            activeStyle={{
-              borderBottom: '3px solid #D49b7a',
-            }}
-
-            style={{outline: 0}}
-          >Serviços</NavLink>
-          <NavLink 
-            to="/contato" 
-            className={navContatoClass} 
-
-            onMouseEnter={() => onHover('contato')} 
-            onMouseOut={() => offHover('contato')}
-          
-
-            activeStyle={{
-              borderBottom: '3px solid #D49b7a',
-            }}
-
-            style={{outline: 0}}
-          >Contato</NavLink>
-          <NavLink 
-            to="/sobre" 
-            className={navSobreClass} 
-
-            onMouseEnter={() => onHover('sobre')} 
-            onMouseOut={() => offHover('sobre')}
-          
-            activeStyle={{
-              borderBottom: '3px solid #D49b7a',
-            }}
-
-            style={{outline: 0}}
-          >Sobre</NavLink>
-        </nav>
+        {/* <BackgroundMenuBar /> */}
+        {/* <MenuBar  /> */}
+        <NavBar />
 
       </div>
 

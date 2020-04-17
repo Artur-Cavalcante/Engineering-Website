@@ -21,6 +21,7 @@ module.exports = {
                 'msg_box_confirmed': '#51a351',
                 'msg_box_wait': '#a3a051',
                 'msg_box_fail': '#a35151',
+                'bg_menu_bar': 'rgba(0,0,0,0.3)'
             },
             spacing:{
                 '1p': '0.30rem',

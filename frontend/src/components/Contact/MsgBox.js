@@ -1,24 +1,21 @@
 import React, { useState } from 'react';
 
 function MsgBox(props) {
-	//color 51a351
+	const [msgConfirmed, setMsgConfirmed] = useState('Mensagem enviada com sucesso!  ');
+	const [msgFail, setMsgFail] = useState('Por favor, tente novamente,\n ou ligue para nós, (79) 996268563  ');
+	const [msgWait, setMsgWait] = useState('Enviando Mensagem... ');
+	const [buttonValue, setButtonValue] = useState('x');
 
-	const [msgConfirmed, setMsgConfirmed] = useState('Mensagem enviada com sucesso!  ')
-	const [msgFail, setMsgFail] = useState('Por favor, tente novamente,\n ou ligue para nós, (79) 996268563  ')
-	const [msgWait, setMsgWait] = useState('Enviando Mensagem... ')
-	const [buttonValue, setButtonValue] = useState('x')
-
-	const [classMsgBox, setClassMsgBox] = useState('absolute z-1 p-6 cursor-pointer')
+	const [classMsgBox, setClassMsgBox] = useState('absolute z-1 p-6 cursor-pointer');
 
 	function handleClose() {
 		setClassMsgBox('');
 		setMsgConfirmed('');
 		setMsgFail('');
 		setMsgWait('');
-		setButtonValue('')
+		setButtonValue('');
 	}
 
-	console.log('foi');
 	switch (props.condition) {
 		case 'confirmed':
 			return (
@@ -35,7 +32,9 @@ function MsgBox(props) {
 							top-0
 						"
 					
-					>{buttonValue}</button>
+					>
+						{buttonValue}
+					</button>
 				</div>
 			);
 		case 'wait':
@@ -46,7 +45,13 @@ function MsgBox(props) {
 					onClick={handleClose}
 				>
 					<p className="inline">{msgWait}</p>
-					<button className="inline">{buttonValue}</button>
+					<button 
+						className="
+							inline
+						"
+					>
+						{buttonValue}
+					</button>
 				</div>
 			);
 		case 'fail':
@@ -57,11 +62,14 @@ function MsgBox(props) {
 					onClick={handleClose}
 				>
 					<p className="inline">{msgFail}</p>
-					<button className="
-							text-white
-							p-6
-						"
-					>{buttonValue}</button>
+					<button 
+							className="
+								text-white
+								p-6
+							"
+					>
+						{buttonValue}
+					</button>
 				</div>
 			);
 	}

@@ -14,8 +14,8 @@ function Footer() {
     return (
         <footer
             className="
-            bg-second
-            h-auto
+                bg-second
+                h-auto
             "
         >
             <div
@@ -23,11 +23,9 @@ function Footer() {
                 className="
                     p-1
                     grid grid-cols-1
-                    
                     md:grid md:grid-cols-2
                     lg:grid lg:grid-cols-2
                     xl:grid xl:grid-cols-2
-                    
                 "
             >
                 <div 
@@ -35,10 +33,10 @@ function Footer() {
                         flex flex-row 
                         h-full
                         w-3/5
-                        
                     "
                 >
-                    <div id="img-logo-box"
+                    <div 
+                        id="img-logo-box"
                         className='self-center'
                     >
                         <a href="https://ionecavalcanteengenharia.com.br">
@@ -46,13 +44,19 @@ function Footer() {
                             src={img_logo} 
                             alt="img-logo" 
                             className="
-                                w-16
+                                h-auto
+                                w-12
+                                sm:w-12
+                                md:w-12
+                                lg:w-16
+                                xl:w-16
                             "
                         />
                         </a>
                     </div>
-                    <div id="name-logo-box"
-                          className="self-end pb-1"
+                    <div 
+                        id="name-logo-box"
+                        className="self-end"
                     >
                         <a href="https://ionecavalcanteengenharia.com.br">
 
@@ -60,7 +64,11 @@ function Footer() {
                             src={name_logo} 
                             alt="name-logo" 
                             className="
-                                w-64
+                                w-56
+                                sm:w-56
+                                md:w-56
+                                lg:w-64
+                                xl:w-64
                             "
                         />
                         </a>
@@ -69,27 +77,26 @@ function Footer() {
 
                 <div 
                     className="
-                        flex flex-row items-center justify-around
+                        flex flex-row items-stretch justify-around
+                        h-auto
                     "
                 >
                     <div 
                         id="instagram-box"
-
                     >
                         <a 
                             href="https://instagram.com/eng.ionecavalcante/" 
                             target="_blank"
                             className="
                                 flex flex-col items-center justify-around
-
                             "
                         >
                             <img 
                                 src={instagram_logo} 
                                 alt="instagram-logo" 
                                 className="
-                                    w-16
-                                
+                                    h-12
+                                    w-12
                                 "
                             />
                             <p className='text-sm'>Instagram</p>
@@ -98,23 +105,19 @@ function Footer() {
 
                     <div 
                         id="e-mail-box"
-                        
                     >
                         <NavLink 
                             to="/contato"  
-                            className="
-                                flex flex-col items-center justify-around
-
-                            "
                         >
                             <img 
                                 src={e_mail_logo} 
                                 alt="e-mail-logo" 
                                 className="
-                                    w-20
+                                    h-12
+                                    w-12
                                 "
                             />
-                            <p className='text-sm'>E-mail</p>
+                            <p className='text-sm text-center'>E-mail</p>
                         </NavLink>
                     </div>
 
@@ -123,13 +126,13 @@ function Footer() {
                             to="/contato"
                             className="
                                 flex flex-col items-center justify-around
-
                             "
                         >
                             <img 
                                 src={phone_logo} 
                                 alt="phone-logo" 
                                 className="
+                                    h-12
                                     w-12
                                 " 
                             />
@@ -143,13 +146,13 @@ function Footer() {
                             target="_blank" 
                             className="
                                 flex flex-col items-center justify-around
-
                             "
                         >
                             <img 
                                 src={github_logo} 
                                 alt="github-logo" 
                                 className="
+                                    h-12
                                     w-12
                                 "
                             />
@@ -163,15 +166,18 @@ function Footer() {
             <div
                 id="footer-bar-both"
                 className="
-                flex flex-row items-center justify-center
-                bg-black
+                    flex flex-row items-center justify-center
+                    bg-black
                 "
             >
                 <a
                     className="
                         text-second
                     "
-                    href="https://github.com/Artur-Cavalcante">&copy;2020 Artur-Cavalcante</a>
+                    href="https://github.com/Artur-Cavalcante"
+                >
+                    &copy;2020 Artur-Cavalcante
+                </a>
             </div>
         </footer>
     );

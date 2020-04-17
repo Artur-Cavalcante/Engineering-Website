@@ -1,11 +1,11 @@
 const express = require('express');
 const routes  = require('./routes');
-const cors = require('cors')
+const cors = require('cors');
 const { middlewareError } = require('./middlewares/middlewareError');
 
 const app = express();
 
-app.use(cors())
+app.use(cors());
 app.use(express.json());
 app.use(middlewareError);
 app.use(routes);
@@ -13,4 +13,4 @@ app.use(routes);
 
 const PORT = 3333;
 
-app.listen(PORT, () => console.log(`Server running at port ${PORT}`)) 
+app.listen(PORT, () => console.log(`Server running at port ${PORT}`));

@@ -1,7 +1,5 @@
 import React from 'react';
-
 import '../styles/output.css';
-
 
 import ReformasResidenciaisEComerciais from './images/services/ReformasResidenciaisEComerciais.svg';
 import ProjetosPrediaisEdeRede from './images/services/ProjetosPrediaisEdeRede.svg';
@@ -17,166 +15,180 @@ function Services() {
                 bg-bg_gray 
                 pb-20
                 pt-8
-                "
+            "
         >
 
             <section
                 id="services-box"
                 className="
-                grid grid-rows-1 items-center justify-center
-                gap-8 
-                
+                    grid grid-rows-1 items-center justify-center
+                    gap-8 
                 "
             >
                 <div 
                     className="
                         flex flex-row justify-center 
-                        "
-                        >
+                    "
+                >
 
                     <h1
                         className=" 
-                        flex flex-row justify-center items-center
-                        text-center
-                        bg-primary
+                            flex flex-row justify-center items-center
+                            text-center
+                            bg-primary
 
-                        w-64 h-12
-                        rounded-sm
+                            w-64 h-12
+                            rounded-sm
 
-                        shadow-xl
-                        text-md
-                "
+                            shadow-xl
+                            text-md
+                        "
                     >
                         Serviços
-                </h1>
+                    </h1>
                 </div>
 
                 <div
                     className="
-                    grid grid-cols-3 gap-16
-                    
-            ">
+                        grid grid-cols-3 gap-16
+                    ">
                     <div
                         className="
-                        flex flex-col justify-center items-center
-                        text-second
-                        shadow-xl
-                        rounded-lg
-                        p-6
-                        w-64
-
-                    bg-white
-                    "
+                            flex flex-col justify-center items-center
+                            text-second
+                            shadow-xl
+                            rounded-lg
+                            p-6
+                            w-64
+                            bg-white
+                        "
                     >
-                        <div >
-                            <img src={ReformasResidenciaisEComerciais} alt="Reformas Residenciais" />
+                        <div>
+                            <img 
+                                src={ReformasResidenciaisEComerciais} 
+                                alt="Reformas Residenciais" 
+                            />
                         </div>
-                        <h2 className="text-center">
+                        <h2 
+                            className="text-center"
+                        >
                             Reformas Residênciais <br />e Comerciais
-                    </h2>
+                        </h2>
                     </div>
 
                     <div
                         className="
-                    flex flex-col justify-center items-center
-                    text-second
-                    shadow-xl
-                    rounded-lg
-                    p-6
-                    w-64
-                    bg-white
-                    "
-
+                            flex flex-col justify-center items-center
+                            text-second
+                            shadow-xl
+                            rounded-lg
+                            p-6
+                            w-64
+                            bg-white
+                        "
                     >
                         <div>
-                            <img src={ProjetosPrediaisEdeRede} alt="ProjetosPrediaisEdeRede" />
+                            <img 
+                                src={ProjetosPrediaisEdeRede} 
+                                alt="ProjetosPrediaisEdeRede"
+                            />
                         </div>
-                        <h2 className="text-center">
+                        <h2 
+                            className="text-center"
+                        >
                             Projetos Prediais e de Rede
-                    </h2>
+                        </h2>
                     </div>
 
 
                     <div
                         className="
-                    flex flex-col justify-center items-center
-                    text-second
-                    shadow-xl
-                    rounded-lg
-                    p-6
-                    w-64
-                    
-                    bg-white
+                            flex flex-col justify-center items-center
+                            text-second
+                            shadow-xl
+                            rounded-lg
+                            p-6
+                            w-64
+                            bg-white
                         "
                     >
-                        <div >
-                            <img src={LevantamentoCadastral} alt="LevantamentoCadastral" />
+                        <div>
+                            <img 
+                                src={LevantamentoCadastral} 
+                                alt="LevantamentoCadastral" 
+                            />
                         </div>
-                        <h2 className="">
+                        <h2>
                             Levantamento Cadastral
-                    </h2>
+                        </h2>
                     </div>
 
 
                     <div
                         className="
-                    flex flex-col justify-center items-center
-                    text-second
-                    shadow-xl
-                    rounded-lg
-                    p-6
-                    w-64
-
-                    bg-white
+                            flex flex-col justify-center items-center
+                            text-second
+                            shadow-xl
+                            rounded-lg
+                            p-6
+                            w-64
+                            bg-white
                         "
                     >
                         <div>
-                            <img src={Consultoria} alt="Consultoria" />
+                            <img 
+                                src={Consultoria} 
+                                alt="Consultoria" 
+                            />
                         </div>
-                        <h2 className="">
+                        <h2>
                             Consultoria
-                    </h2>
+                        </h2>
                     </div>
 
 
                     <div
                         className="
-                    flex flex-col justify-center items-center
-                    text-second
-                    shadow-xl
-                    rounded-lg
-                    p-6
-                    w-64
-
-                    bg-white
+                            flex flex-col justify-center items-center
+                            text-second
+                            shadow-xl
+                            rounded-lg
+                            p-6
+                            w-64
+                            bg-white
                         "
                     >
                         <div>
-                            <img src={Licitacao} alt="Licitacao" />
+                            <img 
+                                src={Licitacao} 
+                                alt="Licitacao" 
+                            />
                         </div>
-                        <h2 className="">
+                        <h2>
                             Licitação
-                    </h2>
+                        </h2>
                     </div>
 
                     <div
                         className="
-                    flex flex-col justify-center items-center
-                    text-second
-                    shadow-xl
-                    rounded-lg
-                    p-6
-                    w-64
-
-                    bg-white
+                            flex flex-col justify-center items-center
+                            text-second
+                            shadow-xl
+                            rounded-lg
+                            p-6
+                            w-64
+                            bg-white
                         "
                     >
-                        <div className="">
-                            <img src={Auditoria} alt="Auditoria" />
+                        <div>
+                            <img 
+                                src={Auditoria} 
+                                alt="Auditoria" 
+                            />
                         </div>
-                        <h2 className="">
+                        <h2>
                             Auditoria
-                    </h2>
+                        </h2>
                     </div>
 
                 </div>
