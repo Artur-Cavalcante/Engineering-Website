@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../../styles/output.css';
 import axios from 'axios';
 import MsgBox from './MsgBox'
@@ -16,65 +16,69 @@ function Contact() {
     const [mensagem, setMensagem] = useState('');
     const [numero_telefone, setNumero_telefone] = useState('');
 
-    const [isSubmit, setIsSubmit] = useState(false);
+
     const [msgCondition, setMsgCondition] = useState('');
 
 
-    function handleMask(value){
-        if (value.length === 15){
+    function handleMask(value) {
+        //This mask check if is a phone number, or a house number
+        if (value.length === 15) {
             //(xx) xxxxx-xxxx phone
             return value
-            .replace(/\D/g, '')
-            .replace(/(\d{2})(\d)/, '($1) $2')
-            .replace(/(\d{5})(\d)/, '$1-$2');
-        }else{
+                .replace(/\D/g, '')
+                .replace(/(\d{2})(\d)/, '($1) $2')
+                .replace(/(\d{5})(\d)/, '$1-$2');
+        } else {
             //(xx) xxxx-xxxx house
             return value
-            .replace(/\D/g, '')
-            .replace(/(\d{2})(\d)/, '($1) $2').replace(/(\d{4})(\d)/, '$1-$2');
+                .replace(/\D/g, '')
+                .replace(/(\d{2})(\d)/, '($1) $2').replace(/(\d{4})(\d)/, '$1-$2');
         }
     }
-    
 
-    function handleFormSubmit(){
-        setIsSubmit(true);
-    }
 
-    function handleSendMsg() {
+    function handleSendMsg(formContact) {
+        //Set message condition from msgbox to wait, do post, then set confirmed, or if error, set fail
+        //After remove value from  numero_telefone input, and clear all input
         setMsgCondition('wait');
-        axios.post('http://192.168.15.60:3333/api/contato', { 
-                    Name: nome,
-                    Email: e_mail,
-                    PhoneNumber: numero_telefone,
-                    Subject: assunto, 
-                    Text: mensagem 
-                })
+
+        axios.post('http://ionecavalcanteengenharia-com-br.umbler.net/api/contato', {
+            Name: nome,
+            Email: e_mail,
+            PhoneNumber: numero_telefone,
+            Subject: assunto,
+            Text: mensagem
+        })
             .then(() => { setMsgCondition('confirmed') })
-            .catch((error) => { console.log(error);  setMsgCondition('fail'); });
+            .catch((error) => { console.log(error); setMsgCondition('fail'); });
+        setNumero_telefone(undefined);
+        formContact.reset();
+
     };
 
-    
+
     return (
-        <section 
+        <section
             id="contact-box"
             className="
-               bg-gray-400 
                bg-bg_gray
-               h-landing
+               h-full
+               p-6
             "
         >
             <div
                 className="
                     p-8
-                    flex flex-row justify-center items-center
+                    flex flex-row-2 justify-center items-center
+                    
                 "
             >
-                <MsgBox condition={msgCondition}/>
+                <MsgBox condition={msgCondition} />
                 <h1
                     className="
                         flex flex-row justify-center items-center
                         bg-primary
-                        w-64 h-12
+                        w-56 h-12
                         rounded-sm
                         shadow-xl
                         text-md
@@ -89,6 +93,7 @@ function Contact() {
                 className="
                     grid grid-cols-4
                     gap-12
+                    
                     justify-center items-center
                 "
             >
@@ -101,21 +106,27 @@ function Contact() {
                         m-5
                         overflow-y-auto
                         overflow-x-visible
-                        h-full
-                        max-h-432
+                        h-auto
+                        shadow-lg
+                        w-full
                     "
                 >
                     <form
                         id="contact_form"
                         className="p-3"
-                        onSubmit={handleFormSubmit}
+                        onSubmit={(e) => {
+                            let form = e.target;
+                            e.preventDefault();
+                            handleSendMsg(form)
+                        }
+                        }
                     >
                         <div
                             className="
-                                p-3    
+                                p-2    
                             "
                         >
-                            <label >Nome</label>
+                            <label className="p-1" >Nome</label>
                             <input
                                 type="text"
                                 placeholder="Ex: João"
@@ -124,18 +135,23 @@ function Contact() {
                                 className="
                                     block
                                     w-full
-                                    border-b-2
-                                    focus:border-primary focus:bg-gray-200
+                                    rounded-md
+                                    focus:outline-none focus:shadow-outline focus:border-primary
+                                    
+                                    text-sm
+                                    shadow-md
+                                    p-2
+                                    mt-2
                                 "
                             />
                         </div>
 
-                        <div 
+                        <div
                             className="
-                                p-3    
+                                p-2    
                             "
                         >
-                            <label>E-mail</label>
+                            <label className="p-1">E-mail</label>
                             <input
                                 type="email"
                                 placeholder="Ex: joao_paulo12@outlook.com"
@@ -144,39 +160,49 @@ function Contact() {
                                 className="
                                     block
                                     w-full
-                                    border-b-2
-                                    focus:border-primary focus:bg-gray-200
+                                    rounded-md
+                                    focus:outline-none focus:shadow-outline focus:border-primary
+
+                                    text-sm
+                                    shadow-md
+                                    p-2
+                                    mt-2
                                 "
                             />
                         </div>
-                        <div 
+                        <div
                             className="
-                                p-3    
+                                p-2    
                             "
                         >
-                            <label>Telefone</label>
+                            <label className="p-1">Telefone</label>
                             <input
                                 type="text"
                                 placeholder="Ex: (79) 99626-8563"
-                                onChange={(e) => { setNumero_telefone(handleMask( e.target.value)); }}
+                                onChange={(e) => { setNumero_telefone(handleMask(e.target.value)) }}
                                 maxLength='15'
                                 value={numero_telefone}
                                 required
                                 className="
                                     block
                                     w-full
-                                    border-b-2
-                                    focus:border-primary focus:bg-gray-200
+                                    rounded-md
+                                    focus:outline-none focus:shadow-outline focus:border-primary
+
+                                    text-sm
+                                    shadow-md
+                                    p-2
+                                    mt-2
                                 "
                             />
                         </div>
 
-                        <div 
+                        <div
                             className="
-                                p-3   
+                                p-2   
                             "
                         >
-                            <label>Assunto</label>
+                            <label className="p-1">Assunto</label>
                             <input
                                 type="text"
                                 placeholder="Ex: Orçamento de Reforma"
@@ -185,18 +211,23 @@ function Contact() {
                                 className="
                                     block
                                     w-full
-                                    border-b-2
-                                    focus:border-primary focus:bg-gray-200
+                                    rounded-md
+                                    focus:outline-none focus:shadow-outline focus:border-primary
+
+                                    text-sm
+                                    shadow-md
+                                    p-2
+                                    mt-2
                                 "
                             />
                         </div>
 
-                        <div 
+                        <div
                             className="
-                                p-3
+                                p-2
                             "
                         >
-                            <label>Mensagem</label>
+                            <label className="p-1">Mensagem</label>
                             <textarea
                                 placeholder="Ex: Preciso de um orçamento para a reforma do..."
                                 onChange={(e) => { setMensagem(e.target.value) }}
@@ -204,16 +235,20 @@ function Contact() {
                                 className="
                                     block
                                     w-full
-                                    border-b-2
-                                    focus:border-primary focus:bg-gray-200
-                                    resize-y
+                                    rounded-md
+                                    focus:outline-none focus:shadow-outline focus:border-primary
+
+                                    text-sm
+                                    shadow-md
+                                    p-2
+                                    mt-2
                                 "
                             />
                         </div >
 
-                        <div 
+                        <div
                             className="
-                                p-3
+                                p-2
                             "
                         >
 
@@ -237,18 +272,24 @@ function Contact() {
                 <aside
                     className="
                         col-span-1
-                        grid grid-rows-3
-                        justify-center items-center
+                        flex flex-col
+                        justify-around items-center
                         bg-white
                         m-5
-                        min-h-432
+                        h-full
                         rounded-md
+                        shadow-lg
+                        w-full
+                        min-h-500
+                        max-h-500
+
+                        
                     "
                 >
                     <div
                         className="
-                            grid grid-rows-1
-                            justify-center content-center self-center
+                            flex flex-col
+                            justify-around items-center
                         "
                     >
                         <img
@@ -261,9 +302,10 @@ function Contact() {
                                 w-12
                             "
                         />
-                        <p 
+                        <p
                             className="
                                 text-center
+                                text-sm
                             "
                         >
                             E-mail <br />
@@ -271,25 +313,25 @@ function Contact() {
                         </p>
                     </div>
 
-                    <div 
+                    <div
                         className="
-                            grid grid-rows-1
-                            justify-center content-center self-center
+                            flex flex-col
+                            justify-around items-center
                         "
                     >
-                        
-                        <img 
+
+                        <img
                             src={telefone_img}
                             alt="telefone_img"
                             className="
-                                ml-8
                                 w-12
                                 h-full
                             "
                         />
-                        <p 
+                        <p
                             className="
                                 text-center
+                                text-sm
                             "
                         >
                             Telefone <br />
@@ -297,27 +339,28 @@ function Contact() {
                         </p>
                     </div>
 
-                    <div 
-                        className="
-                            grid grid-rows-1
-                            justify-center content-center
+                    <div>
+                        <a
+                            href="https://instagram.com/eng.ionecavalcante/"
+                            target="_blank"
+                            className="
+                            flex flex-col
+                            justify-around items-center
+                            cursor-pointer
                         "
-                    >
-                        <a 
-                            href="https://instagram.com/eng.ionecavalcante/" 
-                            target="_blank" 
-                            style={{ cursor: 'pointer' }}
+
                         >
-                            <img 
-                                src={instagram_img} 
-                                alt="instagram_img" 
+                            <img
+                                src={instagram_img}
+                                alt="instagram_img"
                                 className="
                                     w-12
                                 "
                             />
-                            <p 
+                            <p
                                 className="
                                     text-center
+                                    text-sm
                                 "
                             >
                                 Instagram <br />

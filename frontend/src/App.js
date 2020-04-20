@@ -12,8 +12,8 @@ function App() {
     <div 
       id="App" 
       className="
-        w-full
-        h-auto
+      h-auto
+      w-full
         font-Lato
       " 
     >

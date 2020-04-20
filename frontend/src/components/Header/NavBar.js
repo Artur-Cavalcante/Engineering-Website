@@ -52,7 +52,6 @@ function NavBar(){
           className="
             flex flex-row items-center justify-around
             hidden
-            sm:inline-flex
             md:inline-flex
             lg:inline-flex
             xl:inline-flex

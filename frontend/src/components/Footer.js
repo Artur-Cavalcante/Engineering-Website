@@ -3,12 +3,11 @@ import { NavLink } from 'react-router-dom';
 import '../styles/output.css';
 
 
-import img_logo from './images/footer/Logo_Negativa.svg';
-import name_logo from './images/footer/IoneCavalcanteEngineeringLogoNameWithoutBackgroundFim.svg';
 import instagram_logo from './images/footer/Instagram_Negativa-1.svg';
 import e_mail_logo from './images/footer/Email_negativa.svg';
 import phone_logo from './images/footer/Telefone_Negativa-1.svg';
 import github_logo from './images/footer/Github_Negativa.svg';
+import logo_with_name from './images/footer/LogoNegativaWithName.svg'
 
 function Footer() {
     return (
@@ -26,51 +25,19 @@ function Footer() {
                     md:grid md:grid-cols-2
                     lg:grid lg:grid-cols-2
                     xl:grid xl:grid-cols-2
+                    
                 "
             >
                 <div 
                     className="
-                        flex flex-row 
+                        flex flex-row  
                         h-full
                         w-3/5
                     "
                 >
-                    <div 
-                        id="img-logo-box"
-                        className='self-center'
-                    >
+                    <div className="w-84">
                         <a href="https://ionecavalcanteengenharia.com.br">
-                        <img 
-                            src={img_logo} 
-                            alt="img-logo" 
-                            className="
-                                h-auto
-                                w-12
-                                sm:w-12
-                                md:w-12
-                                lg:w-16
-                                xl:w-16
-                            "
-                        />
-                        </a>
-                    </div>
-                    <div 
-                        id="name-logo-box"
-                        className="self-end"
-                    >
-                        <a href="https://ionecavalcanteengenharia.com.br">
-
-                        <img 
-                            src={name_logo} 
-                            alt="name-logo" 
-                            className="
-                                w-56
-                                sm:w-56
-                                md:w-56
-                                lg:w-64
-                                xl:w-64
-                            "
-                        />
+                            <img src={logo_with_name} alt="logoWithName"/>
                         </a>
                     </div>
                 </div>

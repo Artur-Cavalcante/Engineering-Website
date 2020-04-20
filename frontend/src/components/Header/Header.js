@@ -1,57 +1,31 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import NavBar from './NavBar';
 import MenuBar from './MenuBar';
 import BackgroundMenuBar from './BackgroundMenuBar';
+import NavBar from './NavBar';
+import ButtonNav from './ButtonNav';
 import '../../styles/output.css';
 
-import IoneCavalcanteEngenhariaLogo from '../images/header/IoneCavalcanteEngineeringLogoWithBackground.svg';
-import IoneCavalcanteEngenhariaLogoNameWithoutBackground from '../images/header/IoneCavalcanteEngineeringLogoNameWithoutBackground.svg';
+import IoneCavalcanteEngenhariaLogoWithName from '../images/header/LogoWithLogoName.svg';
 
 function Header() {
-  const [navInicioClass, setNavInicioClass] = useState('text-sm ' );
-  const [navServicosClass, setNavServicosClass] = useState('text-sm');
-  const [navContatoClass, setNavContatoClass] = useState('text-sm');
-  const [navSobreClass, setNavSobreClass] = useState('text-sm');
+  const [menuBar, setMenuBar] = useState(false);
+  const [backgroundMenuBar, setBackgroundMenuBar] = useState(false)
 
-
-  function onHover(nav) {
-    switch (nav) {
-      case 'inicio':
-        setNavInicioClass('text-sm border-b-3p border-primary');
-        break;
-      case 'servicos':
-        setNavServicosClass('text-sm border-b-3p border-primary');
-        break;
-      case 'contato':
-        setNavContatoClass('text-sm border-b-3p border-primary');
-        break;
-      case 'sobre':
-        setNavSobreClass('text-sm border-b-3p border-primary');
-        break;
-      default:
-        break;
-    }
+  function handleClickBackgroundOrOption(){
+    setMenuBar(false);
+    setBackgroundMenuBar(false);
   }
 
-  function offHover(nav) {
-    switch (nav) {
-      case 'inicio':
-        setNavInicioClass('text-sm ');
-        break;
-      case 'servicos':
-        setNavServicosClass('text-sm ');
-        break;
-      case 'contato':
-        setNavContatoClass('text-sm ');
-        break;
-      case 'sobre':
-        setNavSobreClass('text-sm ');
-        break;
-      default:
-        break;
-    }
-  }
+  function handleClickButtonNav(){
+    if(!(menuBar && backgroundMenuBar)){
+      setMenuBar(<MenuBar onClick={handleClickBackgroundOrOption}/>);
+      setBackgroundMenuBar(<BackgroundMenuBar onClick={handleClickBackgroundOrOption}/>);
+    }else{
+      setMenuBar(false);
+      setBackgroundMenuBar(false);
+    };
+  };
+
   return (
     <header
       className="
@@ -70,46 +44,17 @@ function Header() {
             h-full
           "
         >
-          <div id="logo-img-box">
+          <div className="w-84">
             <a href="https://ionecavalcanteengenharia.com.br">
-              <img
-                src={IoneCavalcanteEngenhariaLogo}
-                alt="Ione-Cavalcante-Engenharia-logo-img"
-                className="
-                  h-auto
-                  w-12
-                  sm:w-12
-                  md:w-12
-                  lg:w-16
-                  xl:w-16
-                  
-                "
-                
-              />
-
+              <img src={IoneCavalcanteEngenhariaLogoWithName} alt="logoWithName" />
             </a>
           </div>
-          <h1 id="logo-name-box ">
-            <a href="https://ionecavalcanteengenharia.com.br">
-              <img
-                src={IoneCavalcanteEngenhariaLogoNameWithoutBackground}
-                alt="Ione-Cavalcante-Engenharia-logo-name"
-                className="
-                  w-56
-                  sm:w-56
-                  md:w-56
-                  lg:w-64
-                  xl:w-64
-                "
-              />
 
-            </a>
-          </h1>
         </div>
-
-        {/* <BackgroundMenuBar /> */}
-        {/* <MenuBar  /> */}
+        <ButtonNav onClick={handleClickButtonNav}/>
         <NavBar />
+        {menuBar}
+        {backgroundMenuBar }
 
       </div>
 

@@ -4,10 +4,10 @@ module.exports = {
             'Lato': ['Lato','sans-serif']
         },
         maxHeight:{
-            '432': '432px'
+            '500': '500px'
         },
         minHeight:{
-            '432': '432px'
+            '500': '500px'
         },
         extend:{
             colors:{
@@ -25,6 +25,8 @@ module.exports = {
             },
             spacing:{
                 '1p': '0.30rem',
+                '72': '18rem',
+                '84': '20rem',
                 '100': '100%',
                 '75': '75%',
                 '82':'24rem'
