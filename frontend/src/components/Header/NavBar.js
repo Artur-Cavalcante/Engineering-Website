@@ -3,25 +3,25 @@ import { NavLink } from 'react-router-dom';
 import '../../styles/output.css';
 
 function NavBar(){
-  const [navInicioClass, setNavInicioClass] = useState('text-sm ' );
-  const [navServicosClass, setNavServicosClass] = useState('text-sm');
-  const [navContatoClass, setNavContatoClass] = useState('text-sm');
-  const [navSobreClass, setNavSobreClass] = useState('text-sm');
+  const [navInicioClass, setNavInicioClass] = useState('text-sm lg:text-base xl:text-base ' );
+  const [navServicosClass, setNavServicosClass] = useState('text-sm lg:text-base xl:text-base ');
+  const [navContatoClass, setNavContatoClass] = useState('text-sm lg:text-base xl:text-base ');
+  const [navSobreClass, setNavSobreClass] = useState('text-sm lg:text-base xl:text-base ');
 
 
   function onHover(nav) {
     switch (nav) {
       case 'inicio':
-        setNavInicioClass('text-sm border-b-3p border-primary');
+        setNavInicioClass('text-sm lg:text-base xl:text-base  border-b-3p border-primary');
         break;
       case 'servicos':
-        setNavServicosClass('text-sm border-b-3p border-primary');
+        setNavServicosClass('text-sm lg:text-base xl:text-base  border-b-3p border-primary');
         break;
       case 'contato':
-        setNavContatoClass('text-sm border-b-3p border-primary');
+        setNavContatoClass('text-sm lg:text-base xl:text-base  border-b-3p border-primary');
         break;
       case 'sobre':
-        setNavSobreClass('text-sm border-b-3p border-primary');
+        setNavSobreClass('text-sm lg:text-base xl:text-base  border-b-3p border-primary');
         break;
       default:
         break;
@@ -31,16 +31,16 @@ function NavBar(){
   function offHover(nav) {
     switch (nav) {
       case 'inicio':
-        setNavInicioClass('text-sm ');
+        setNavInicioClass('text-sm lg:text-base xl:text-base  ');
         break;
       case 'servicos':
-        setNavServicosClass('text-sm ');
+        setNavServicosClass('text-sm lg:text-base xl:text-base  ');
         break;
       case 'contato':
-        setNavContatoClass('text-sm ');
+        setNavContatoClass('text-sm lg:text-base xl:text-base  ');
         break;
       case 'sobre':
-        setNavSobreClass('text-sm ');
+        setNavSobreClass('text-sm lg:text-base xl:text-base  ');
         break;
       default:
         break;
@@ -51,8 +51,8 @@ function NavBar(){
 		<nav
           className="
             flex flex-row items-center justify-around
-            hidden
-            md:inline-flex
+            hidden 
+            md:inline-flex 
             lg:inline-flex
             xl:inline-flex
           "

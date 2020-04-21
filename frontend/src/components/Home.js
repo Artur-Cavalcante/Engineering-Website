@@ -14,9 +14,9 @@ function Home() {
                 md:grid-rows-3
                 lg:grid-rows-4 
                 xl:grid-rows-5
-            "    
+            "
         >
-            <div 
+            <div
                 id="service-box-1"
                 style={{ backgroundImage: `url(${home_img})` }}
                 className="
@@ -35,42 +35,54 @@ function Home() {
                 Titulo de Cima
             </div>
 
-            <div 
+            <div
                 id="services-box-2"
                 className="
                     bg-white
                     row-span-1
                 "
             >
-                <div 
+                <div
                     className="text-center"
                 >
                     Nossos Projetos
                 </div>
-                <div 
-                    className="text-justify"
+                <div className="
+                        flex flex-row
+                    "
                 >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde magni quisquam obcaecati blanditiis, ex molestias ab quae vel expedita, voluptate omnis vero? Deserunt harum a, ex commodi placeat hic? Quasi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
+                    <div
+                        className="text-justify"
+                    >
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde magni quisquam obcaecati blanditiis, ex molestias ab quae vel expedita, voluptate omnis vero? Deserunt harum a, ex commodi placeat hic? Quasi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
+
+                    </div>
+                    <div className="">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tempore vitae ut deserunt corporis, fuga nihil omnis cum dolores! Vero eaque rerum quidem impedit laudantium consectetur, atque animi aspernatur quod!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tempore vitae ut deserunt corporis, fuga nihil omnis cum dolores! Vero eaque rerum quidem impedit laudantium consectetur, atque animi aspernatur quod!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tempore vitae ut deserunt corporis, fuga nihil omnis cum dolores! Vero eaque rerum quidem impedit laudantium consectetur, atque animi aspernatur quod!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tempore vitae ut deserunt corporis, fuga nihil omnis cum dolores! Vero eaque rerum quidem impedit laudantium consectetur, atque animi aspernatur quod!
+                    </div>
 
                 </div>
             </div>
 
-            <div 
+            <div
                 id="services-box-3"
                 className="
                     bg-bg_blue
                     row-span-1
                 "
             >
-                <div 
+                <div
                     className="text-center"
                 >
                     Nossos Projetos
                 </div>
-                <div 
+                <div
                     className="text-justify"
                 >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?

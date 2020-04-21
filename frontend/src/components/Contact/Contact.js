@@ -63,7 +63,9 @@ function Contact() {
             className="
                bg-bg_gray
                h-full
-               p-6
+               p-2
+               lg:p-4
+               xl:p-6
             "
         >
             <div
@@ -81,7 +83,7 @@ function Contact() {
                         w-56 h-12
                         rounded-sm
                         shadow-xl
-                        text-md
+                        text-sm md:text-base lg:text-base xl:text-base
                     "
                 >
                     Entre em contato
@@ -91,9 +93,11 @@ function Contact() {
 
             <div
                 className="
-                    grid grid-cols-4
-                    gap-12
-                    
+                    xl:grid grid-cols-4
+                    flex flex-wrap
+                    gap-1
+                    xl:gap-10
+                    h-full
                     justify-center items-center
                 "
             >
@@ -101,14 +105,17 @@ function Contact() {
                 <div
                     className="
                         col-span-3
+
                         bg-white
                         rounded-md
-                        m-5
+                        m-3
                         overflow-y-auto
                         overflow-x-visible
                         h-auto
                         shadow-lg
                         w-full
+                        min-h-550
+                        max-h-550
                     "
                 >
                     <form
@@ -122,11 +129,9 @@ function Contact() {
                         }
                     >
                         <div
-                            className="
-                                p-2    
-                            "
+                            className="p-2 "
                         >
-                            <label className="p-1" >Nome</label>
+                            <label className="p-1 text-sm md:text-base lg:text-base xl:text-base" >Nome</label>
                             <input
                                 type="text"
                                 placeholder="Ex: João"
@@ -147,11 +152,9 @@ function Contact() {
                         </div>
 
                         <div
-                            className="
-                                p-2    
-                            "
+                            className="p-2"
                         >
-                            <label className="p-1">E-mail</label>
+                            <label className="p-1 text-sm md:text-base lg:text-base xl:text-base">E-mail</label>
                             <input
                                 type="email"
                                 placeholder="Ex: joao_paulo12@outlook.com"
@@ -171,11 +174,9 @@ function Contact() {
                             />
                         </div>
                         <div
-                            className="
-                                p-2    
-                            "
+                            className="p-2"
                         >
-                            <label className="p-1">Telefone</label>
+                            <label className="p-1 text-sm md:text-base lg:text-base xl:text-base">Telefone</label>
                             <input
                                 type="text"
                                 placeholder="Ex: (79) 99626-8563"
@@ -198,11 +199,9 @@ function Contact() {
                         </div>
 
                         <div
-                            className="
-                                p-2   
-                            "
+                            className="p-2"
                         >
-                            <label className="p-1">Assunto</label>
+                            <label className="p-1 text-sm md:text-base lg:text-base xl:text-base">Assunto</label>
                             <input
                                 type="text"
                                 placeholder="Ex: Orçamento de Reforma"
@@ -223,11 +222,9 @@ function Contact() {
                         </div>
 
                         <div
-                            className="
-                                p-2
-                            "
+                            className="p-2"
                         >
-                            <label className="p-1">Mensagem</label>
+                            <label className="p-1 text-sm md:text-base lg:text-base xl:text-base">Mensagem</label>
                             <textarea
                                 placeholder="Ex: Preciso de um orçamento para a reforma do..."
                                 onChange={(e) => { setMensagem(e.target.value) }}
@@ -247,9 +244,7 @@ function Contact() {
                         </div >
 
                         <div
-                            className="
-                                p-2
-                            "
+                            className="p-2"
                         >
 
                             <input
@@ -263,6 +258,8 @@ function Contact() {
                                     bg-primary
                                     hover:bg-primary_hover
                                     hover:border-primary hover:border-2
+
+                                    text-sm md:text-base lg:text-base xl:text-base
                                 "
                             />
                         </div>
@@ -273,15 +270,16 @@ function Contact() {
                     className="
                         col-span-1
                         flex flex-col
+                        
                         justify-around items-center
-                        bg-white
-                        m-5
-                        h-full
-                        rounded-md
-                        shadow-lg
+                        xl:justify-between
+                        
+                        m-3
+                        h-auto
+                        
                         w-full
-                        min-h-500
-                        max-h-500
+                        min-h-550
+                        max-h-550
 
                         
                     "
@@ -289,7 +287,12 @@ function Contact() {
                     <div
                         className="
                             flex flex-col
-                            justify-around items-center
+                            justify-center items-center
+                            bg-white
+                            w-full
+                            h-32
+                            rounded-lg
+                            shadow-lg
                         "
                     >
                         <img
@@ -316,7 +319,12 @@ function Contact() {
                     <div
                         className="
                             flex flex-col
-                            justify-around items-center
+                            justify-center items-center
+                            bg-white
+                            w-full
+                            h-32
+                            rounded-lg
+                            shadow-lg
                         "
                     >
 
@@ -325,7 +333,7 @@ function Contact() {
                             alt="telefone_img"
                             className="
                                 w-12
-                                h-full
+                                h-auto
                             "
                         />
                         <p
@@ -339,14 +347,26 @@ function Contact() {
                         </p>
                     </div>
 
-                    <div>
+                    <div 
+                        className="
+                            bg-white
+                            w-full
+                            h-32
+                            rounded-lg
+                            shadow-lg
+
+                            flex flex-col
+                            justify-center
+                        "
+                    >
                         <a
                             href="https://instagram.com/eng.ionecavalcante/"
                             target="_blank"
                             className="
                             flex flex-col
-                            justify-around items-center
+                            justify-center items-center
                             cursor-pointer
+                            
                         "
 
                         >

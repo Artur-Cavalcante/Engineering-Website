@@ -43,7 +43,7 @@ function Services() {
                             rounded-sm
 
                             shadow-xl
-                            text-md
+                            text-sm md:text-base lg:text-base xl:text-base
                         "
                     >
                         Serviços
@@ -52,7 +52,13 @@ function Services() {
 
                 <div
                     className="
-                        grid grid-cols-3 gap-8
+                        grid grid-cols-2 gap-5
+                        sm:grid-cols-2 sm:gap-5
+                        md:grid-cols-3 md:gap-8
+                        lg:grid-cols-3 lg:gap-8
+                        xl:grid-cols-3 lg:gap-8
+                        
+                        
                     ">
                     <div
                         className="
@@ -60,9 +66,19 @@ function Services() {
                             text-second
                             shadow-xl
                             rounded-lg
-                            p-6
-                            w-56
                             bg-white
+                            
+                            p-4
+                            sm:p-4
+                            md:p-6
+                            lg:p-6
+                            xl:p-6
+
+                            w-40
+                            sm:w-40
+                            md:w-56
+                            lg:w-56
+                            xl:w-56
                             
                         "
                     >
@@ -78,7 +94,7 @@ function Services() {
                         <h2 
                             className="
                                 text-center
-                                text-base
+                                text-sm md:text-base lg:text-base xl:text-base
                             "
                         >
                             Reformas Residênciais <br />e Comerciais
@@ -91,9 +107,18 @@ function Services() {
                             text-second
                             shadow-xl
                             rounded-lg
-                            p-6
-                            w-56
                             bg-white
+                            p-4
+                            sm:p-4
+                            md:p-6
+                            lg:p-6
+                            xl:p-6
+
+                            w-40
+                            sm:w-40
+                            md:w-56
+                            lg:w-56
+                            xl:w-56
                         "
                     >
                         <div>
@@ -108,7 +133,7 @@ function Services() {
                         <h2 
                             className="
                                 text-center
-                                text-base
+                                text-sm md:text-base lg:text-base xl:text-base
                             "
                         >
                             Projetos Prediais e de Rede
@@ -122,9 +147,18 @@ function Services() {
                             text-second
                             shadow-xl
                             rounded-lg
-                            p-6
-                            w-56
                             bg-white
+                            p-4
+                            sm:p-4
+                            md:p-6
+                            lg:p-6
+                            xl:p-6
+
+                            w-40
+                            sm:w-40
+                            md:w-56
+                            lg:w-56
+                            xl:w-56
                         "
                     >
                         <div>
@@ -132,14 +166,14 @@ function Services() {
                                 src={LevantamentoCadastral} 
                                 alt="LevantamentoCadastral" 
                                 className="
-                                    w-16
+                                    w-18
                                 "
                             />
                         </div>
                         <h2 
                             className="
                                 text-center
-                                text-base
+                                text-sm md:text-base lg:text-base xl:text-base
                             "
                         >
                             Levantamento Cadastral
@@ -153,9 +187,18 @@ function Services() {
                             text-second
                             shadow-xl
                             rounded-lg
-                            p-6
-                            w-56
                             bg-white
+                            p-4
+                            sm:p-4
+                            md:p-6
+                            lg:p-6
+                            xl:p-6
+
+                            w-40
+                            sm:w-40
+                            md:w-56
+                            lg:w-56
+                            xl:w-56
                         "
                     >
                         <div>
@@ -170,7 +213,7 @@ function Services() {
                         <h2
                             className="
                                 text-center
-                                text-base
+                                text-sm md:text-base lg:text-base xl:text-base
                             "
                         >
                             Consultoria
@@ -184,9 +227,18 @@ function Services() {
                             text-second
                             shadow-xl
                             rounded-lg
-                            p-6
-                            w-56
                             bg-white
+                            p-4
+                            sm:p-4
+                            md:p-6
+                            lg:p-6
+                            xl:p-6
+
+                            w-40
+                            sm:w-40
+                            md:w-56
+                            lg:w-56
+                            xl:w-56
                         "
                     >
                         <div>
@@ -202,7 +254,7 @@ function Services() {
                         <h2
                             className="
                                 text-center
-                                text-base
+                                text-sm md:text-base lg:text-base xl:text-base
                             "
                         >
                             Licitação
@@ -215,9 +267,18 @@ function Services() {
                             text-second
                             shadow-xl
                             rounded-lg
-                            p-6
-                            w-56
                             bg-white
+                            p-4
+                            sm:p-4
+                            md:p-6
+                            lg:p-6
+                            xl:p-6
+
+                            w-40
+                            sm:w-40
+                            md:w-56
+                            lg:w-56
+                            xl:w-56
                         "
                     >
                         <div>
@@ -232,7 +293,7 @@ function Services() {
                         <h2
                             className="
                                 text-center
-                                text-base                                
+                                text-sm md:text-base lg:text-base xl:text-base
                             "
                         >
                             Auditoria

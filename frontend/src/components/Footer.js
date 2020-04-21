@@ -21,7 +21,8 @@ function Footer() {
                 id="logo-media-box"
                 className="
                     p-1
-                    grid grid-cols-1
+
+                    flex flex-wrap-reverse items-center justify-center
                     md:grid md:grid-cols-2
                     lg:grid lg:grid-cols-2
                     xl:grid xl:grid-cols-2
@@ -31,21 +32,46 @@ function Footer() {
                 <div 
                     className="
                         flex flex-row  
+                        justify-center
+                        sm:justify-center
+                        md:justify-between
+                        lg:justify-between
+                        
                         h-full
-                        w-3/5
+                        w-full
+                        
                     "
                 >
-                    <div className="w-84">
+                    <div className="
+                                        
+                        "
+                        
+                        >
                         <a href="https://ionecavalcanteengenharia.com.br">
-                            <img src={logo_with_name} alt="logoWithName"/>
+                            <img 
+                                src={logo_with_name} 
+                                alt="logoWithName"
+                                className="
+                                    h-full
+                                    w-56
+                                    sm:w-64
+                                    md:w-84
+                                    lg:w-84
+                                    xl:w-84
+                                "
+                            />
                         </a>
                     </div>
                 </div>
 
                 <div 
                     className="
+                        h-auto w-full
+                        p-2
                         flex flex-row items-stretch justify-around
-                        h-auto
+                        md:justify-between
+                        lg:justify-between
+                        xl:justify-between
                     "
                 >
                     <div 
@@ -55,18 +81,26 @@ function Footer() {
                             href="https://instagram.com/eng.ionecavalcante/" 
                             target="_blank"
                             className="
-                                flex flex-col items-center justify-around
+                                flex flex-col items-center justify-center
                             "
                         >
                             <img 
                                 src={instagram_logo} 
                                 alt="instagram-logo" 
                                 className="
-                                    h-12
-                                    w-12
+                                    h-8
+                                    w-8
+                                    sm:w-10
+                                    sm:h-10
+                                    lg:w-12
+                                    lg:h-12
+                                    xl:h-12
+                                    xl:w-12
+
+                                    
                                 "
                             />
-                            <p className='text-sm'>Instagram</p>
+                            <p className='text-sm text-black text-center'>Instagram</p>
                         </a>
                     </div>
 
@@ -74,17 +108,27 @@ function Footer() {
                         id="e-mail-box"
                     >
                         <NavLink 
-                            to="/contato"  
+                            to="/contato"
+                            className="
+                                flex flex-col justify-center items-center
+                            "  
                         >
                             <img 
                                 src={e_mail_logo} 
                                 alt="e-mail-logo" 
                                 className="
-                                    h-12
-                                    w-12
+                                    h-8
+                                    w-8
+                                    sm:w-10
+                                    sm:h-10
+                                    lg:w-12
+                                    lg:h-12
+                                    xl:h-12
+                                    xl:w-12
+
                                 "
                             />
-                            <p className='text-sm text-center'>E-mail</p>
+                            <p className='text-sm text-black text-center'>E-mail</p>
                         </NavLink>
                     </div>
 
@@ -92,18 +136,25 @@ function Footer() {
                         <NavLink 
                             to="/contato"
                             className="
-                                flex flex-col items-center justify-around
+                                flex flex-col  justify-center items-center
                             "
                         >
                             <img 
                                 src={phone_logo} 
                                 alt="phone-logo" 
                                 className="
-                                    h-12
-                                    w-12
+                                    h-8
+                                    w-8
+                                    sm:w-10
+                                    sm:h-10
+                                    lg:w-12
+                                    lg:h-12
+                                    xl:h-12
+                                    xl:w-12
+
                                 " 
                             />
-                            <p className='text-sm'>Telefone</p>
+                            <p className='text-sm text-black text-center'>Telefone</p>
                         </NavLink>
                     </div>
 
@@ -112,18 +163,25 @@ function Footer() {
                             href="http://github.com/Artur-Cavalcante/ione-cavalcante-engineering" 
                             target="_blank" 
                             className="
-                                flex flex-col items-center justify-around
+                                flex flex-col justify-center items-center
                             "
                         >
                             <img 
                                 src={github_logo} 
                                 alt="github-logo" 
                                 className="
-                                    h-12
-                                    w-12
+                                    h-8
+                                    w-8
+                                    sm:w-10
+                                    sm:h-10
+                                    lg:w-12
+                                    lg:h-12
+                                    xl:h-12
+                                    xl:w-12
+
                                 "
                             />
-                            <p className='text-sm'>Github</p>
+                            <p className='text-sm text-black text-center'>Github</p>
                         </a>
                     </div>
                 </div>
@@ -140,8 +198,10 @@ function Footer() {
                 <a
                     className="
                         text-second
+                        text-sm
                     "
                     href="https://github.com/Artur-Cavalcante"
+                    target="_blank"
                 >
                     &copy;2020 Artur-Cavalcante
                 </a>

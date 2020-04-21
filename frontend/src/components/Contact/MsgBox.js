@@ -16,7 +16,7 @@ function MsgBox(props) {
 		setMsgFail('Erro ao enviar mensagem. Por favor, tente novamente!  ');
 		setMsgWait('Enviando Mensagem...  ');
 		setButtonValue('x');
-	}
+	};
 
 	function handleClose() {
 		setClassButton('');
@@ -25,7 +25,7 @@ function MsgBox(props) {
 		setMsgFail('');
 		setMsgWait('');
 		setButtonValue('');
-	}
+	};
 
 	useEffect(()=>{
 		handleActive();

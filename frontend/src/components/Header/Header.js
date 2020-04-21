@@ -30,23 +30,45 @@ function Header() {
     <header
       className="
         bg-bg_white
-        h-auto
+        h-full
+        
       ">
       <div className="
         grid grid-cols-2
-        m-1
+        p-1
+        w-full
       ">
 
         <div
           id="logo-box"
           className="
             flex flex-row items-center
-            h-full
+            h-full w-full
+            
           "
         >
-          <div className="w-84">
-            <a href="https://ionecavalcanteengenharia.com.br">
-              <img src={IoneCavalcanteEngenhariaLogoWithName} alt="logoWithName" />
+          <div className="w-full h-full"
+          >
+            <a 
+              href="https://ionecavalcanteengenharia.com.br"
+              className=" 
+                block 
+                w-full h-full 
+                min-h-47 min-w-242 
+              "  
+            >
+              <img 
+                src={IoneCavalcanteEngenhariaLogoWithName} 
+                alt="logoWithName" 
+                className="
+                  h-full
+                  w-84
+                  sm:w-84
+                  md:w-84
+                  lg:w-84
+                  xl:w-84
+                "
+              />
             </a>
           </div>
 
