@@ -80,6 +80,7 @@ function Footer() {
                         <a 
                             href="https://instagram.com/eng.ionecavalcante/" 
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="
                                 flex flex-col items-center justify-center
                             "
@@ -162,6 +163,7 @@ function Footer() {
                         <a 
                             href="http://github.com/Artur-Cavalcante/ione-cavalcante-engineering" 
                             target="_blank" 
+                            rel="noopener noreferrer"
                             className="
                                 flex flex-col justify-center items-center
                             "
@@ -202,6 +204,7 @@ function Footer() {
                     "
                     href="https://github.com/Artur-Cavalcante"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     &copy;2020 Artur-Cavalcante
                 </a>
