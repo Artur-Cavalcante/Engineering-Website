@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import '../../styles/output.css';
+
 import MenuBar from './MenuBar';
 import BackgroundMenuBar from './BackgroundMenuBar';
 import NavBar from './NavBar';
 import ButtonNav from './ButtonNav';
-import '../../styles/output.css';
 
 import IoneCavalcanteEngenhariaLogoWithName from '../images/header/LogoWithLogoName.svg';
 
@@ -14,7 +15,7 @@ function Header() {
   function handleClickBackgroundOrOption(){
     setMenuBar(false);
     setBackgroundMenuBar(false);
-  }
+  };
 
   function handleClickButtonNav(){
     if(!(menuBar && backgroundMenuBar)){
@@ -31,7 +32,6 @@ function Header() {
       className="
         bg-bg_white
         h-full
-        
       ">
       <div className="
         grid grid-cols-2
@@ -44,7 +44,6 @@ function Header() {
           className="
             flex flex-row items-center
             h-full w-full
-            
           "
         >
           <div className="w-full h-full"

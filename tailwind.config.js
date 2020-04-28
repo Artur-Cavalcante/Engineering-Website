@@ -22,6 +22,7 @@ module.exports = {
                 'bg_white': '#ffffff',
                 'bg_gray': '#cccccc',
                 'bg_blue': '#2690D4',
+                'bg_blue_less': '#557cf2',
                 'msg_box_confirmed': '#51a351',
                 'msg_box_wait': '#a3a051',
                 'msg_box_fail': '#a35151',
@@ -34,7 +35,8 @@ module.exports = {
                 '84': '20rem',
                 '100': '100%',
                 '75': '75%',
-                '86':'24rem'
+                '86':'24rem',
+                '120':'35rem'
             },
             borderWidth:{
                 '3p': '3px'

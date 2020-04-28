@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import '../../styles/output.css';
 
 function MenuBar(props) {
@@ -31,21 +30,24 @@ function MenuBar(props) {
 				>
 					Menu
 				</p>
-				<NavLink 
+
+				<li 
 					exact to="/" 
 					className="
 						w-full
 						p-6 
 						text-center
 						outline-none
-
 					" 
 					activeStyle = {{
 						backgroundColor: "#D49b7a"
 					}}
 					onClick={props.onClick}
-				>Início</NavLink>
-				<NavLink 
+				>
+					Início
+				</li>
+				
+				<li 
 					to="/servicos" 
 					className="
 						w-full
@@ -57,41 +59,44 @@ function MenuBar(props) {
 						backgroundColor: "#D49b7a"
 					}}
 					onClick={props.onClick}
-				>Serviços</NavLink>
-				<NavLink 
+				>
+					Serviços
+				</li>
+
+				<li 
 					to="/contato" 
 					className="
 						w-full
 						p-6 
 						text-center
 						outline-none
-
 					"
 					activeStyle = {{
 						backgroundColor: "#D49b7a"
 					}}
 					onClick={props.onClick}
-				>Contato</NavLink>
-				<NavLink 
+				>
+					Contato
+				</li>
+
+				<li 
 					to="/sobre" 
 					className="
 						w-full
 						p-6	
 						text-center		
 						outline-none
-		
 					"
 					activeStyle = {{
 						backgroundColor: "#D49b7a"
 					}}
 					onClick={props.onClick}
-				>Sobre</NavLink>
+				>
+					Sobre
+				</li>
 			</nav>
-
 		</section>
-
-
 	);
-}
+};
 
 export default MenuBar;

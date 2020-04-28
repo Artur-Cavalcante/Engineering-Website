@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import '../../styles/output.css';
 
-function NavBar(){
-  const [navInicioClass, setNavInicioClass] = useState('text-sm lg:text-base xl:text-base ' );
+function NavBar() {
+  const [navInicioClass, setNavInicioClass] = useState('text-sm lg:text-base xl:text-base ');
   const [navServicosClass, setNavServicosClass] = useState('text-sm lg:text-base xl:text-base ');
   const [navContatoClass, setNavContatoClass] = useState('text-sm lg:text-base xl:text-base ');
   const [navSobreClass, setNavSobreClass] = useState('text-sm lg:text-base xl:text-base ');
@@ -25,8 +24,8 @@ function NavBar(){
         break;
       default:
         break;
-    }
-  }
+    };
+  };
 
   function offHover(nav) {
     switch (nav) {
@@ -44,83 +43,77 @@ function NavBar(){
         break;
       default:
         break;
-    }
-  }
+    };
+  };
 
-	return (
-		<nav
-          className="
-            flex flex-row items-center justify-around
-            hidden 
-            md:inline-flex 
-            lg:inline-flex
-            xl:inline-flex
-          "
-        >
-          <NavLink 
-            exact to="/" 
-            className={navInicioClass} 
+  return (
+    <nav
+      className="
+        flex flex-row items-center justify-around
+        hidden 
+        md:inline-flex 
+        lg:inline-flex
+        xl:inline-flex
+      "
+    >
 
-            onMouseEnter={() => onHover('inicio')} 
-            onMouseOut={() => offHover('inicio')}
-          
-            activeStyle={{
-              //NavLink's Atribute 
-              borderBottom: '3px solid #D49b7a',
-            }}
+      <li
+        exact to="/"
+        className={navInicioClass}
+        onMouseEnter={() => onHover('inicio')}
+        onMouseOut={() => offHover('inicio')}
 
-            style={{outline: 0}}
-          > 
-            Início
-          </NavLink>
-          <NavLink 
-            to="/servicos"
-            className={navServicosClass} 
+        activeStyle={{
+          borderBottom: '3px solid #D49b7a',
+        }}
+        style={{ outline: 0 }}
+      >
+        Início
+      </li>
 
-            onMouseEnter={() => onHover('servicos')} 
-            onMouseOut={() => offHover('servicos')}
-          
-            activeStyle={{
-              borderBottom: '3px solid #D49b7a',
-            }}
+      <li
+        to="/servicos"
+        className={navServicosClass}
+        onMouseEnter={() => onHover('servicos')}
+        onMouseOut={() => offHover('servicos')}
 
-            style={{outline: 0}}
-          >
-            Serviços
-          </NavLink>
-          <NavLink 
-            to="/contato" 
-            className={navContatoClass} 
+        activeStyle={{
+          borderBottom: '3px solid #D49b7a',
+        }}
+        style={{ outline: 0 }}
+      >
+        Serviços
+      </li>
 
-            onMouseEnter={() => onHover('contato')} 
-            onMouseOut={() => offHover('contato')}
-          
+      <li
+        to="/contato"
+        className={navContatoClass}
+        onMouseEnter={() => onHover('contato')}
+        onMouseOut={() => offHover('contato')}
 
-            activeStyle={{
-              borderBottom: '3px solid #D49b7a',
-            }}
+        activeStyle={{
+          borderBottom: '3px solid #D49b7a',
+        }}
+        style={{ outline: 0 }}
+      >
+        Contato
+      </li>
 
-            style={{outline: 0}}
-          >
-            Contato
-          </NavLink>
-          <NavLink 
-            to="/sobre" 
-            className={navSobreClass} 
+      <li
+        to="/sobre"
+        className={navSobreClass}
+        onMouseEnter={() => onHover('sobre')}
+        onMouseOut={() => offHover('sobre')}
 
-            onMouseEnter={() => onHover('sobre')} 
-            onMouseOut={() => offHover('sobre')}
-          
-            activeStyle={{
-              borderBottom: '3px solid #D49b7a',
-            }}
-
-            style={{outline: 0}}
-          >
-            Sobre
-          </NavLink>
-        </nav>
-	);
-}
+        activeStyle={{
+          borderBottom: '3px solid #D49b7a',
+        }}
+        style={{ outline: 0 }}
+      >
+        Sobre
+      </li>
+    </nav>
+  );
+};
 
 export default NavBar;

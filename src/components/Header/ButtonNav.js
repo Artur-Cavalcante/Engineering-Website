@@ -2,7 +2,6 @@ import React from 'react'
 
 function ButtonNav(props) {
 	return (
-
 		<div className="
 				h-full 
 				flex flex-row justify-end

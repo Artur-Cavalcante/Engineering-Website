@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function BackgroundMenuBar(props){
 	return(
@@ -17,6 +17,6 @@ function BackgroundMenuBar(props){
 		>
 		</div>
 	);
-}
+};
 
-export default BackgroundMenuBar
+export default BackgroundMenuBar;

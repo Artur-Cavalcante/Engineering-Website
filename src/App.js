@@ -1,28 +1,21 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import './styles/output.css';
 
-
 import Header from './components/Header/Header';
-import Routes from './routes';
+import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div 
       id="App" 
-      className="
-        w-auto
-        font-Lato
-      " 
+      className="font-Lato" 
     >
-      <BrowserRouter>
-        <Header />
-        <Routes />
-        <Footer />
-      </BrowserRouter>
+      <Header />
+      <Main />
+      <Footer />    
     </div>
   );
-}
+};
 
 export default App;

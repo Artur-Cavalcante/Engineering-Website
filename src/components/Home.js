@@ -1,96 +1,39 @@
 import React from 'react';
 import '../styles/output.css';
 
-import home_img from './images/home/home.svg'
+import home_img from './images/home/home.svg';
 
 function Home() {
     return (
-        <section
-            id="services-box"
-            className="
-                grid
-                grid-rows-3
-                sm:grid-rows-3
-                md:grid-rows-3
-                lg:grid-rows-4 
-                xl:grid-rows-5
-            "
-        >
+        <section id="home-box">
             <div
-                id="service-box-1"
+                id="home-box-1"
                 style={{ backgroundImage: `url(${home_img})` }}
                 className="
-                       row-span-1
-                       sm:row-span-1
-                       md:row-span-2
-                       lg:grid-rows-3
-                       xl:row-span-3
-                       w-auto 
-                       h-100
-                       relative
-                       bg-no-repeat bg-center bg-cover  
-                       text-center
-                "
-            >
-                Titulo de Cima
-            </div>
+                    w-full
+                    h-auto
 
-            <div
-                id="services-box-2"
-                className="
-                    bg-white
-                    row-span-1
+                    bg-no-repeat bg-center bg-cover
+                    text-center
                 "
             >
-                <div
-                    className="text-center"
-                >
-                    Nossos Projetos
-                </div>
-                <div className="
-                        flex flex-row
-                    "
-                >
+                <div className=" 
+                    text-center
+                ">
                     <div
-                        className="text-justify"
+                        className="
+                            text-bold text-base text-white
+                            md:text-2xl lg:3xl xl:text-4xl
+                        "
                     >
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde magni quisquam obcaecati blanditiis, ex molestias ab quae vel expedita, voluptate omnis vero? Deserunt harum a, ex commodi placeat hic? Quasi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
+                        15+ Years of Experience in Financial Services E Business.
 
                     </div>
-                    <div className="">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tempore vitae ut deserunt corporis, fuga nihil omnis cum dolores! Vero eaque rerum quidem impedit laudantium consectetur, atque animi aspernatur quod!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tempore vitae ut deserunt corporis, fuga nihil omnis cum dolores! Vero eaque rerum quidem impedit laudantium consectetur, atque animi aspernatur quod!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tempore vitae ut deserunt corporis, fuga nihil omnis cum dolores! Vero eaque rerum quidem impedit laudantium consectetur, atque animi aspernatur quod!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tempore vitae ut deserunt corporis, fuga nihil omnis cum dolores! Vero eaque rerum quidem impedit laudantium consectetur, atque animi aspernatur quod!
+                    <div className="text-sm text-white w-40 ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint, non molestias, nesciunt, ab pariatur ducimus iste vero similique modi tenetur laborum quaerat ullam. Esse eaque quam
                     </div>
-
                 </div>
-            </div>
 
-            <div
-                id="services-box-3"
-                className="
-                    bg-bg_blue
-                    row-span-1
-                "
-            >
-                <div
-                    className="text-center"
-                >
-                    Nossos Projetos
-                </div>
-                <div
-                    className="text-justify"
-                >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloribus necessitatibus. Velit quia, voluptatem ducimus temporibus veniam impedit corporis, delectus eligendi fugiat molestiae error nisi facilis illo perferendis eaque nesciunt?
-
-                </div>
             </div>
         </section>
     );
