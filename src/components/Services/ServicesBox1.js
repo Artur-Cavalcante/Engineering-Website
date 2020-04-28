@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../styles/output.css';
 
-import casa1 from '../images/services/Casa1.svg';
-import casa2 from '../images/services/Casa2.svg';
-import casa3 from '../images/services/Casa3.svg';
+import casa1 from '../../images/services/Casa1.svg';
+import casa2 from '../../images/services/Casa2.svg';
+import casa3 from '../../images/services/Casa3.svg';
 
 function ServicesBox1(){
     return (

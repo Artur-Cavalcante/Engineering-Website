@@ -1,8 +1,7 @@
 import React from 'react';
 import '../styles/output.css';
 
-import { FaGithub, FaPhone, FaEnvelope, FaInstagram } from 'react-icons/fa';
-import logo_with_name from './images/footer/LogoNegativaWithName.svg'
+import logo_with_name from '../images/footer/LogoNegativaWithName.svg'
 
 function Footer() {
     return (

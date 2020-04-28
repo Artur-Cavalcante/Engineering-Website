@@ -6,7 +6,7 @@ import BackgroundMenuBar from './BackgroundMenuBar';
 import NavBar from './NavBar';
 import ButtonNav from './ButtonNav';
 
-import IoneCavalcanteEngenhariaLogoWithName from '../images/header/LogoWithLogoName.svg';
+import IoneCavalcanteEngenhariaLogoWithName from '../../images/header/LogoWithLogoName.svg';
 
 function Header() {
   const [menuBar, setMenuBar] = useState(false);

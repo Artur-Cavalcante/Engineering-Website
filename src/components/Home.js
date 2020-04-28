@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/output.css';
 
-import home_img from './images/home/home.svg';
+import home_img from '../images/home/home.svg';
 
 function Home() {
     return (
@@ -11,14 +11,14 @@ function Home() {
                 style={{ backgroundImage: `url(${home_img})` }}
                 className="
                     w-full
-                    h-auto
+                    h-full
 
                     bg-no-repeat bg-center bg-cover
-                    text-center
                 "
             >
                 <div className=" 
                     text-center
+                    
                 ">
                     <div
                         className="

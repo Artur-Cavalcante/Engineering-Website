@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/output.css';
 
-import Licitacao from '../images/services/Licitacao.svg';
-import Auditoria from '../images/services/Auditoria.svg';
+import Licitacao from '../../images/services/Licitacao.svg';
+import Auditoria from '../../images/services/Auditoria.svg';
 import { FaHome, FaBuilding, FaDraftingCompass, FaUsers } from 'react-icons/fa';
 
 function ServicesBox2() {

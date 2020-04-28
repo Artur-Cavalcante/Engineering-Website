@@ -6,6 +6,7 @@ import MsgBox from './MsgBox'
 
 import Aside from './Aside';
 import Form from './Form';
+import ToTop from './ToTop';
 
 function Contact() {
 
@@ -64,8 +65,11 @@ function Contact() {
                bg-bg_gray
                h-full
                p-2
-               lg:p-4
-               xl:p-6
+               pb-16
+               sm:p-2 sm:pb-16 
+               md:p-2 md:pb-16
+               lg:p-4 lg:pb-16
+               xl:p-6 xl:pb-16
             "
         >
             <div
@@ -134,6 +138,8 @@ function Contact() {
 
                 <Aside />
             </div>
+
+            <ToTop />
         </section>
     );
 };
