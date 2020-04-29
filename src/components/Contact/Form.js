@@ -142,6 +142,7 @@ function Form(props){
                         hover:bg-primary_hover
                         hover:border-primary hover:border-2
                         text-sm md:text-base lg:text-base xl:text-base
+                        transition duration-200 ease-in-out transform hover:-translate-y-1 
                     "
                 />
             </div>

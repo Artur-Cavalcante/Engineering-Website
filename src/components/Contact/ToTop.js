@@ -12,7 +12,6 @@ function ToTop(){
             window.scrollTo("0", heightPX);
         }else{
             stopping();
-            console.log('Passou')
         };
 
     };
@@ -37,9 +36,17 @@ function ToTop(){
                 right-0
                 absolute
                 focus:outline-none
+                transition duration-200 ease-in-out transform hover:-translate-y-1 
             "
         >
-            <FaArrowCircleUp onClick={handleToTop} color="#D49b7a" size="2.5rem" />
+            <FaArrowCircleUp 
+                onClick={handleToTop} 
+                color="#D49b7a" 
+                size="2.5rem" 
+                className="
+                    transition duration-200 ease-in-out transform hover:-translate-y-1 
+                "
+            />
         </button>
     );
 };

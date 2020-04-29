@@ -2,21 +2,21 @@ import React, { useState } from 'react';
 import '../../styles/output.css';
 
 function NavBar() {
-  const [navServicosClass, setNavServicosClass] = useState('text-sm lg:text-base xl:text-base cursor-pointer');
-  const [navContatoClass, setNavContatoClass] = useState('text-sm lg:text-base xl:text-base cursor-pointer');
-  const [navSobreClass, setNavSobreClass] = useState('text-sm lg:text-base xl:text-base cursor-pointer');
+  const [navServicosClass, setNavServicosClass] = useState('text-sm sm:text-sm md:text-sm lg:text-base xl:text-base cursor-pointer');
+  const [navContatoClass, setNavContatoClass] = useState('text-sm sm:text-sm md:text-sm lg:text-base xl:text-base cursor-pointer');
+  const [navSobreClass, setNavSobreClass] = useState('text-sm sm:text-sm md:text-sm lg:text-base xl:text-base cursor-pointer');
 
 
   function onHover(nav) {
     switch (nav) {
       case 'servicos':
-        setNavServicosClass('text-sm lg:text-base xl:text-base  border-b-3p border-primary cursor-pointer');
+        setNavServicosClass('text-sm sm:text-sm md:text-sm lg:text-base xl:text-base  border-b-3p border-primary cursor-pointer transition duration-300 ');
         break;
       case 'sobre':
-        setNavSobreClass('text-sm lg:text-base xl:text-base  border-b-3p border-primary cursor-pointer');
+        setNavSobreClass('text-sm sm:text-sm md:text-sm lg:text-base xl:text-base  border-b-3p border-primary cursor-pointer transition duration-300 ');
         break;
       case 'contato':
-        setNavContatoClass('text-sm lg:text-base xl:text-base  border-b-3p border-primary cursor-pointer');
+        setNavContatoClass('text-sm sm:text-sm md:text-sm lg:text-base xl:text-base  border-b-3p border-primary cursor-pointer transition duration-300 ');
         break;
       default:
         break;
@@ -26,13 +26,13 @@ function NavBar() {
   function offHover(nav) {
     switch (nav) {
       case 'servicos':
-        setNavServicosClass('text-sm lg:text-base xl:text-base  ');
+        setNavServicosClass('text-sm sm:text-sm md:text-sm lg:text-base xl:text-base ');
         break;
       case 'contato':
-        setNavContatoClass('text-sm lg:text-base xl:text-base  ');
+        setNavContatoClass('text-sm sm:text-sm md:text-sm lg:text-base xl:text-base  ');
         break;
       case 'sobre':
-        setNavSobreClass('text-sm lg:text-base xl:text-base  ');
+        setNavSobreClass('text-sm sm:text-sm md:text-sm lg:text-base xl:text-base  ');
         break;
       default:
         break;
@@ -50,39 +50,45 @@ function NavBar() {
         list-none
       "
     >
-      <li
-        className={navServicosClass}
-        onMouseEnter={() => onHover('servicos')}
-        onMouseOut={() => offHover('servicos')}
-
-        style={{ outline: 0 }}
+      <a
+        href="#services-box-1"
+        className="outline-none"
       >
-        Serviços
-      </li>
+        <li
+          className={navServicosClass}
+          onMouseEnter={() => onHover('servicos')}
+          onMouseOut={() => offHover('servicos')}
+        >
+          Serviços
 
-      <li
-        className={navSobreClass}
-        onMouseEnter={() => onHover('sobre')}
-        onMouseOut={() => offHover('sobre')}
+        </li>
+      </a>
 
-        activeStyle={{
-          borderBottom: '3px solid #D49b7a',
-        }}
-        style={{ outline: 0 }}
+      <a
+        href="#about-box"
+        className="outline-none"
       >
-        Sobre
-      </li>
+        <li
+          className={navSobreClass}
+          onMouseEnter={() => onHover('sobre')}
+          onMouseOut={() => offHover('sobre')}
+        >
+          Sobre
+        </li>
+      </a>
 
-      <li
-        to="/contato"
-        className={navContatoClass}
-        onMouseEnter={() => onHover('contato')}
-        onMouseOut={() => offHover('contato')}
-
-        style={{ outline: 0 }}
+      <a
+        href="#contact-box"
+        className="outline-none"
       >
-        Contato
-      </li>
+        <li
+          className={navContatoClass}
+          onMouseEnter={() => onHover('contato')}
+          onMouseOut={() => offHover('contato')}
+        >
+          Contato
+        </li>
+      </a>
     </nav>
   );
 };

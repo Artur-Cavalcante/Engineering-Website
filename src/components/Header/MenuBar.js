@@ -17,9 +17,10 @@ function MenuBar(props) {
 			<nav
 				className="
 					flex flex-col items-center 
+					list-none
 				"
 			>
-				<p
+				<div
 					className="
 						w-full
 						p-4 
@@ -29,71 +30,70 @@ function MenuBar(props) {
 					"
 				>
 					Menu
-				</p>
+				</div>
 
-				<li 
-					exact to="/" 
+				<a
+					href="#services-box-1"
 					className="
 						w-full
-						p-6 
-						text-center
 						outline-none
-					" 
-					activeStyle = {{
-						backgroundColor: "#D49b7a"
-					}}
-					onClick={props.onClick}
-				>
-					Início
-				</li>
-				
-				<li 
-					to="/servicos" 
-					className="
-						w-full
-						p-6 
-						text-center
-						outline-none
+						focus:bg-primary
+						hover:bg-primary				
 					"
-					activeStyle = {{
-						backgroundColor: "#D49b7a"
-					}}
-					onClick={props.onClick}
 				>
-					Serviços
-				</li>
+					<li 
+						className="
+							p-6 
+							text-center
+							outline-none
+						"
+						onClick={props.onClick}
+					>
+						Serviços
+					</li>
+				</a>
 
-				<li 
-					to="/contato" 
+				<a
+					href="#contact-box"
 					className="
 						w-full
-						p-6 
-						text-center
 						outline-none
+						focus:bg-primary
+						hover:bg-primary	
 					"
-					activeStyle = {{
-						backgroundColor: "#D49b7a"
-					}}
-					onClick={props.onClick}
 				>
-					Contato
-				</li>
+					<li 
+						className="
+							p-6 
+							text-center
+							outline-none
+						"
+						onClick={props.onClick}
+					>
+						Contato
+					</li>
+				</a>
 
-				<li 
-					to="/sobre" 
+				<a
+					href="#about-box"
 					className="
 						w-full
-						p-6	
-						text-center		
 						outline-none
+						focus:bg-primary
+						hover:bg-primary	
 					"
-					activeStyle = {{
-						backgroundColor: "#D49b7a"
-					}}
-					onClick={props.onClick}
 				>
-					Sobre
-				</li>
+					<li 
+						className="
+							p-6	
+							text-center		
+							outline-none
+						"
+						onClick={props.onClick}
+					>
+						Sobre
+					</li>
+				</a>
 			</nav>
 		</section>
 	);
