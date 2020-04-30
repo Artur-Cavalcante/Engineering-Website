@@ -51,7 +51,7 @@ function Home() {
                     <div
                         className="
                             text-bold text-base text-white font-black tracking-widest
-                            text-3xl sm:text-3xl md:text-4xl lg:5xl xl:text-6xl
+                            text-3xl sm:text-4xl md:text-5xl lg:5xl xl:text-6xl
                             h-auto w-full
                             m-1 
                         "

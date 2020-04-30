@@ -5,6 +5,7 @@ function MsgBox(props) {
 	const [msgConfirmed, setMsgConfirmed] = useState('');
 	const [msgFail, setMsgFail] = useState('');
 	const [msgWait, setMsgWait] = useState('');
+	const [msgTimeout, setMsgTimeout] = useState('');
 	const [buttonValue, setButtonValue] = useState('');
 
 	const [classMsgBox, setClassMsgBox] = useState('');
@@ -13,18 +14,24 @@ function MsgBox(props) {
 	function handleActive() {
 		setClassMsg('inline pr-3')
 		setClassMsgBox('absolute z-1 p-6 text-white cursor-pointer shadow-lg');
+
 		setMsgConfirmed('Mensagem enviada com sucesso, entraremos em contato!  ');
-		setMsgFail('Erro ao enviar mensagem. por favor tente novamente!  ');
+		setMsgFail('Erro ao enviar mensagem, por favor tente novamente!  ');
 		setMsgWait('Enviando Mensagem...  ');
+		setMsgTimeout('A mensagem demorou muito para ser enviada, por favor tente novamente!  ');
+
 		setButtonValue(<FaTimes className="inline" color="#ffffff" size="1rem" />);
 	};
 
 	function handleClose() {
 		setClassMsg('');
 		setClassMsgBox('');
+
 		setMsgConfirmed('');
 		setMsgFail('');
 		setMsgWait('');
+		setMsgTimeout('');
+
 		setButtonValue('');
 	};
 
@@ -48,7 +55,7 @@ function MsgBox(props) {
 			return (
 				<div
 					className={classMsgBox}
-					style={{ backgroundColor: '#f4d04a' }}
+					style={{ backgroundColor: '#f89406' }}
 					onClick={handleClose}
 				>
 					<p className={classMsg}>{msgWait}</p>
@@ -59,10 +66,21 @@ function MsgBox(props) {
 			return (
 				<div
 					className={classMsgBox}
-					style={{ backgroundColor: '#a35151' }}
+					style={{ backgroundColor: '#bd362f' }}
 					onClick={handleClose}
 				>
 					<p className={classMsg}>{msgFail}</p>
+					{buttonValue}
+				</div>
+			);
+		case 'timeout':
+			return(
+				<div
+					className={classMsgBox}
+					style={{ backgroundColor: '#bd362f' }}
+					onClick={handleClose}
+				>
+					<p className={classMsg}>{msgTimeout}</p>
 					{buttonValue}
 				</div>
 			);

@@ -42,19 +42,39 @@ function Contact() {
         //Set message condition from msgbox to wait, do post, then set confirmed, or if error, set fail
         //After remove value from  numero_telefone input, and clear all input
         setMsgCondition('wait');
-
-        axios.post('http://api.ionecavalcanteengenharia.com.br/api/contato', {
-            Name: nome,
-            Email: e_mail,
-            PhoneNumber: numero_telefone,
-            Subject: assunto,
-            Text: mensagem
-        })
-            .then(() => { setMsgCondition('confirmed') })
-            .catch((error) => { console.log(error); setMsgCondition('fail'); });
+        
+        axios
+            .post('http://api.ionecavalcanteengenharia.com.br/api/contato', {
+                Name: nome,
+                Email: e_mail,
+                PhoneNumber: numero_telefone,
+                Subject: assunto,
+                Text: mensagem
+            },
+            { timeout: 10000})
+            .then((resp) => { 
+                console.log(resp.data.inf, resp.data)
+                if(resp.data.inf){
+                    setMsgCondition('confirmed');
+                    return; 
+                }else{
+                    setTimeout(() => {setMsgCondition('fail')}, 6000);
+                    return;
+                };
+            })
+            .catch((error) => { 
+                if(error){
+                    if (error.code === 'ECONNABORTED') {
+                        setMsgCondition('timeout');
+                        return;
+                    }else{
+                        setTimeout(() => {setMsgCondition('fail')}, 6000);
+                        return;
+                    };
+                };
+            });
         setNumero_telefone(undefined);
         formContact.reset();
-
     };
 
 
