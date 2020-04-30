@@ -49,7 +49,7 @@ function Home() {
                 ">
                     <div
                         className="
-                            text-bold text-base text-white font-black tracking-widest
+                            text-bold text-white font-black tracking-widest
                             text-3xl sm:text-4xl md:text-5xl lg:5xl xl:text-6xl
                             h-auto w-full
                             m-1 
@@ -59,22 +59,28 @@ function Home() {
 
                     </div>
 
-                    <div className="text-sm text-white w-40 font-thin tracking-wide">
+                    <div 
+                        className="
+                            text-white w-40 font-thin tracking-wide
+                            text-xs sm:text-sm md:text-sm lg:text-sm xl:text-base
+                        "
+                        >
                         Deixe todo o esforço da obra conosco
                     </div>
 
                     <button
                         className="
                             m-6
-                            p-3
-                            text-white text-xs
+                            p-2
+                            sm:p-3 md:p-3 lg:p-3 xl:p-3
                             rounded-full
                             border-2 border-white
                             transition duration-300 hover:bg-primary
                             cursor-pointer
                             outline-none
-                            hover:outline-none
-                            focus:outline-none
+                            hover:outline-none focus:outline-none
+                            text-white
+                            text-xs sm:text-sm md:text-sm lg:text-sm xl:text-base
                         "
                         onClick={handleToDown}
                     >
