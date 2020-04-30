@@ -15,10 +15,8 @@ function Footer() {
                 id="logo-media-box"
                 className="
                     p-1
-                    flex flex-wrap-reverse items-center justify-center
-                    md:grid md:grid-rows-1
-                    lg:grid lg:grid-rows-1
-                    xl:grid xl:grid-rows-1
+                    grid grid-rows-1
+                    items-center justify-center
                 "
             >
                 <div>
@@ -51,7 +49,8 @@ function Footer() {
                     className="
                         text-second
                         hover:text-bg_gray
-                        text-sm
+                        text-xs
+                        sm:text-sm md:text-sm lg:text-sm xl:text-sm
                     "
                     href="https://github.com/Artur-Cavalcante"
                     target="_blank"

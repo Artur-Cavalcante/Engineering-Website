@@ -58,6 +58,29 @@ function MenuBar(props) {
 				</a>
 
 				<a
+					href="#about-box"
+					className="
+						w-full
+						outline-none
+						focus:bg-primary
+						hover:bg-primary	
+					"
+				>
+					<li 
+						className="
+							p-6	
+							outline-none
+							text-center
+							text-xs
+							sm:text-sm		
+						"
+						onClick={props.onClick}
+					>
+						Sobre
+					</li>
+				</a>
+				
+				<a
 					href="#contact-box"
 					className="
 						w-full
@@ -80,28 +103,6 @@ function MenuBar(props) {
 					</li>
 				</a>
 
-				<a
-					href="#about-box"
-					className="
-						w-full
-						outline-none
-						focus:bg-primary
-						hover:bg-primary	
-					"
-				>
-					<li 
-						className="
-							p-6	
-							outline-none
-							text-center
-							text-xs
-							sm:text-sm		
-						"
-						onClick={props.onClick}
-					>
-						Sobre
-					</li>
-				</a>
 			</nav>
 		</section>
 	);
