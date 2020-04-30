@@ -18,7 +18,6 @@ function Home() {
 
     function stopping(){
         clearInterval(toDownInterval);
-        console.log('Passou')
     };
 
     function handleToDown(){

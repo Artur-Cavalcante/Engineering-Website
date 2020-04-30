@@ -53,7 +53,6 @@ function Contact() {
             },
             { timeout: 10000})
             .then((resp) => { 
-                console.log(resp.data.inf, resp.data)
                 if(resp.data.inf){
                     setMsgCondition('confirmed');
                     return; 

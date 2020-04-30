@@ -42,12 +42,13 @@ function NavBar() {
   return (
     <nav
       className="
+        list-none
         flex flex-row items-center justify-around
         hidden 
+        sm:hidden
         md:inline-flex 
         lg:inline-flex
         xl:inline-flex
-        list-none
       "
     >
       <a

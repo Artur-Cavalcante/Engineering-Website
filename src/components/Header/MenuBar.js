@@ -24,9 +24,11 @@ function MenuBar(props) {
 					className="
 						w-full
 						p-4 
-						text-center
-						text-sm
 						border-b-2 border-primary
+						text-center
+						text-xs
+						sm:text-sm
+
 					"
 				>
 					Menu
@@ -44,8 +46,10 @@ function MenuBar(props) {
 					<li 
 						className="
 							p-6 
-							text-center
 							outline-none
+							text-center
+							text-xs
+							sm:text-sm
 						"
 						onClick={props.onClick}
 					>
@@ -65,8 +69,10 @@ function MenuBar(props) {
 					<li 
 						className="
 							p-6 
-							text-center
 							outline-none
+							text-center
+							text-xs
+							sm:text-sm
 						"
 						onClick={props.onClick}
 					>
@@ -86,8 +92,10 @@ function MenuBar(props) {
 					<li 
 						className="
 							p-6	
-							text-center		
 							outline-none
+							text-center
+							text-xs
+							sm:text-sm		
 						"
 						onClick={props.onClick}
 					>
