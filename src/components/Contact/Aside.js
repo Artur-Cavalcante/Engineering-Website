@@ -9,8 +9,12 @@ function Aside(){
                     className="
                         col-span-1
                         flex flex-col
+                        items-center
                         
-                        justify-around items-center
+                        justify-around
+                        sm:justify-around
+                        md:justify-around
+                        lg:justify-between
                         xl:justify-between
                         
                         m-3

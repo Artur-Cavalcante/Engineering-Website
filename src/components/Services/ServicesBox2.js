@@ -10,6 +10,7 @@ function ServicesBox2() {
         <div
             id="services-box-2"
             className="
+                bg-bg_gray
                 flex flex-row 
                 items-center justify-center
             "

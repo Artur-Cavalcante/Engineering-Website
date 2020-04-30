@@ -12,13 +12,13 @@ function MsgBox(props) {
 	const [classMsg, setClassMsg] = useState('');
 
 	function handleActive() {
-		setClassMsg('inline pr-3')
-		setClassMsgBox('absolute z-1 p-6 text-white cursor-pointer shadow-lg');
+		setClassMsg('inline pr-3 w-full tracking-tight text-white text-sm sm:text-sm md:text-sm lg:text-base xl:text-base ')
+		setClassMsgBox('absolute z-1 p-6 flex justify-center items-center sm:flex sm:items-center sm:justify-center md:flex-none lg:flex-none xl:flex-none w-72 sm:w-72 md:w-auto lg:w-auto xl:w-auto justify-between cursor-pointer shadow-lg ');
 
 		setMsgConfirmed('Mensagem enviada com sucesso, entraremos em contato!  ');
-		setMsgFail('Erro ao enviar mensagem, por favor tente novamente!  ');
+		setMsgFail('Erro ao enviar mensagem, tente novamente!  ');
 		setMsgWait('Enviando Mensagem...  ');
-		setMsgTimeout('A mensagem demorou muito para ser enviada, por favor tente novamente!  ');
+		setMsgTimeout('Mensagem demorou muito a ser enviada, tente novamente!  ');
 
 		setButtonValue(<FaTimes className="inline" color="#ffffff" size="1rem" />);
 	};

@@ -7,12 +7,12 @@ import Contact from './Contact/Contact';
 
 function Main(){
     return(
-        <>
+        <div className="bg-bg_gray">
             <Home />
             <Services />
             <About />
             <Contact />
-        </>
+        </div>
     );
 };
 

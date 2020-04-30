@@ -11,103 +11,159 @@ function About() {
                     bg-bg_gray
                     w-full
                     h-full
-                    grid 
-                    sm:grid   
-                    md:grid  
-                    lg:grid  
-                    xl:grid  
                     p-8
-                    "
+                "
             >
                 <div className="
-                    row-span-1
-                    sm:row-span-1
-                    md:col-span-1
-                    lg:col-span-1
-                    xl:col-span-1
-                    
+                   
+                    p-6
                     w-full
                     h-full
                     
-                    p-8
+                    
 
                 "
                 >
 
-                    <div className="
-
-                        flex flex-col
-                        h-full
-                        justify-start 
+                    <div 
+                        className="
+                            flex flex-col
+                            h-full w-full
+                            justify-start 
                         "
                     >
                         <div
                             className="
-                             text-2xl
-                                text-black
-                                font-bold
                                 pb-4
+                                font-thin tracking-wide
+                                text-black font-bold
+                                text-lg
+                                sm:text-lg md:text-xl lg:text-xl xl:text-2xl
                              "
                         >
-                            Morgan help Business Performance and Scalability.
+                            Somos uma Equipe Preparada.
                         </div>
                         <div
                             className="
-                                text-base
-                                text-black
+                                text-black font-thin tracking-wide
+                                text-sm
+                                sm:text-sm md:text-sm lg:text-base xl:text-base
+
                             "
                         >
-                            Quisque dolor fringilla semper, libero hendrerit allis, magna augue putate nibh ucibus enim eros acumin far from the countries. Separated they live arcu ligula acumin dolor scelerisque.
+                            Quisque dolor fringilla semper, libero hendrerit allis, magna augue putate nibh ucibus enim eros acumin far from the countries. 
                         </div>
                     </div>
                 </div>
 
                 <div 
                     className="
+                        
                         row-span-1
                         col-span-2
                         w-full
                         h-full
-                        grid grid-cols-2
+                        grid grid-cols-1
+                        sm:grid   sm:grid-cols-1 
+                        md:grid   md:grid-cols-2
+                        lg:grid   lg:grid-cols-2
+                        xl:grid   xl:grid-cols-2
+
                         
                     "
                 >
                     <div className="p-6">
                         <FaCheck style={{ marginBottom: 10 }} color="#333333" size="3rem" />
-                        <div className="text-black text-lg font-bold">
+                        <div 
+                            className="
+                                pb-4
+                                font-thin tracking-wide
+                                text-black font-bold
+                                text-lg
+                                sm:text-lg md:text-xl lg:text-xl xl:text-2xl
+                            "
+                        >
                             Easy Managment
                         </div>
-                        <div className="text-black text-base ">
+                        <div 
+                            className="
+                                text-black font-thin tracking-wide
+                                text-sm
+                                sm:text-sm md:text-sm lg:text-base xl:text-base
+                            "
+                        >
                             Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.
                         </div>
                     </div>
 
                     <div className="p-6">
                         <FaBriefcase style={{ marginBottom: 10 }} color="#333333" size="3rem" />
-                        <div className="text-black text-lg font-bold">
+                        <div 
+                            className="
+                                pb-4
+                                font-thin tracking-wide
+                                text-black font-bold
+                                text-lg
+                                sm:text-lg md:text-xl lg:text-xl xl:text-2xl
+                            "
+                        >
                             Grow your Business
                     </div>
-                        <div className="text-black text-base">
+                        <div 
+                            className="
+                                text-black font-thin tracking-wide
+                                text-sm
+                                sm:text-sm md:text-sm lg:text-base xl:text-base
+                            "
+                        >
                             Question Marks and devious Semikoli, she continued consectetur uvite she continued adipiscing consectetur uvite continued elit ultricies acumin.
                     </div>
                     </div>
 
                     <div className="p-6">
                         <FaFileSignature style={{ marginBottom: 10 }} color="#333333" size="3rem" />
-                        <div className="text-black text-lg font-bold">
+                        <div 
+                            className="
+                                pb-4
+                                font-thin tracking-wide
+                                text-black font-bold
+                                text-lg
+                                sm:text-lg md:text-xl lg:text-xl xl:text-2xl
+                            "
+                        >
                             Highly Customizable
                         </div>
-                        <div className="text-black text-base">
+                        <div 
+                            className="
+                                text-black font-thin tracking-wide
+                                text-sm
+                                sm:text-sm md:text-sm lg:text-base xl:text-base
+                            "
+                        >
                             Pityful a rethoric question ran over her cheek, consectetur uvite adipiscing elit ultricies acumin, then they are still using her.
                         </div>
                     </div>
 
                     <div className="p-6">
                         <FaChartPie style={{ marginBottom: 10 }} color="#333333" size="3rem" />
-                        <div className="text-black text-lg font-bold">
+                        <div 
+                            className="
+                                pb-4
+                                font-thin tracking-wide
+                                text-black font-bold
+                                text-lg
+                                sm:text-lg md:text-xl lg:text-xl xl:text-2xl
+                            "
+                        >
                             Premium Support
                         </div>
-                        <div className="text-black text-base">
+                        <div 
+                            className="
+                                text-black font-thin tracking-wide
+                                text-sm
+                                sm:text-sm md:text-sm lg:text-base xl:text-base
+                            "
+                        >
                             Far from the countries Vokalia and Consonantia, there live the blind texts. Separated, consectetur uvite adipiscing elit ultricies acumin.
                         </div>
                     </div>
@@ -128,16 +184,20 @@ function About() {
                     className="
                         bg-second
                         shadow-2xl
+
+                        
                         max-w-4xl
-                        font-bold
-                        text-black
-                        text-center
+                        
+                        font-bold tracking-wide 
+                        text-black text-center
+
                         p-6
                         md:p-8
                         lg:p-10
                         xl:p-10
 
-                        text-base
+                        text-sm
+                        sm:text-sm
                         md:text-base
                         lg:text-lg
                         xl:text-lg

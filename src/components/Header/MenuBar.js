@@ -7,7 +7,7 @@ function MenuBar(props) {
 			className="
 				fixed
 				top-0 right-0
-				h-2/4 w-2/5
+				h-64 w-2/4
 				z-30
 				bg-white
 				shadow-2xl
@@ -26,8 +26,7 @@ function MenuBar(props) {
 						p-4 
 						border-b-2 border-primary
 						text-center
-						text-xs
-						sm:text-sm
+						text-sm
 
 					"
 				>
@@ -48,8 +47,7 @@ function MenuBar(props) {
 							p-6 
 							outline-none
 							text-center
-							text-xs
-							sm:text-sm
+							text-sm
 						"
 						onClick={props.onClick}
 					>
@@ -71,8 +69,7 @@ function MenuBar(props) {
 							p-6	
 							outline-none
 							text-center
-							text-xs
-							sm:text-sm		
+							text-sm		
 						"
 						onClick={props.onClick}
 					>
@@ -94,8 +91,7 @@ function MenuBar(props) {
 							p-6 
 							outline-none
 							text-center
-							text-xs
-							sm:text-sm
+							text-sm
 						"
 						onClick={props.onClick}
 					>

@@ -51,7 +51,7 @@ function Contact() {
                 Subject: assunto,
                 Text: mensagem
             },
-            { timeout: 10000})
+            { timeout: 15000})
             .then((resp) => { 
                 if(resp.data.inf){
                     setMsgCondition('confirmed');
@@ -116,12 +116,18 @@ function Contact() {
 
             <div
                 className="
-                    xl:grid grid-cols-4
-                    flex flex-wrap
-                    gap-1
-                    xl:gap-10
                     h-full
                     justify-center items-center
+                    flex flex-wrap
+                    sm:flex sm:flex-wrap
+                    md:flex md:flex-wrap
+                    lg:grid lg:grid-cols-4
+                    xl:grid xl:grid-cols-4
+                    gap-1
+                    sm:gap-1
+                    md:gap-1
+                    lg:gap-10
+                    xl:gap-10
                 "
             >
 
