@@ -49,9 +49,10 @@ function ServicesBox2() {
                     </div>
                     <h2
                         className="
-                        text-center 
-                        text-sm md:text-base lg:text-base xl:text-base
-                    "
+                            font-thin tracking-wide
+                            text-center 
+                            text-sm md:text-base lg:text-base xl:text-base
+                        "
                     >
                         Reformas Residênciais <br />e Comerciais
                     </h2>
@@ -59,32 +60,33 @@ function ServicesBox2() {
 
                 <div
                     className="
-                    flex flex-col justify-center items-center
-                    text-second
-                    shadow-xl
-                    rounded-lg
-                    bg-white
-                    p-4
-                    sm:p-4
-                    md:p-6
-                    lg:p-6
-                    xl:p-6
+                        flex flex-col justify-center items-center
+                        text-second
+                        shadow-xl
+                        rounded-lg
+                        bg-white
+                        p-4
+                        sm:p-4
+                        md:p-6
+                        lg:p-6
+                        xl:p-6
 
-                    w-32
-                    sm:w-40
-                    md:w-56
-                    lg:w-56
-                    xl:w-56
-                "
+                        w-32
+                        sm:w-40
+                        md:w-56
+                        lg:w-56
+                        xl:w-56
+                    "
                 >
                     <div>
                         <FaBuilding color="#777777" size="4rem" />
                     </div>
                     <h2
                         className="
-                        text-center
-                        text-sm md:text-base lg:text-base xl:text-base
-                    "
+                            font-thin tracking-wide
+                            text-center
+                            text-sm md:text-base lg:text-base xl:text-base
+                        "
                     >
                         Projetos Prediais e de Rede
                     </h2>
@@ -93,30 +95,31 @@ function ServicesBox2() {
 
                 <div
                     className="
-                    flex flex-col justify-center items-center
-                    text-second
-                    shadow-xl
-                    rounded-lg
-                    bg-white
+                        flex flex-col justify-center items-center
+                        text-second
+                        shadow-xl
+                        rounded-lg
+                        bg-white
 
-                    p-4
-                    sm:p-4
-                    md:p-6
-                    lg:p-6
-                    xl:p-6
+                        p-4
+                        sm:p-4
+                        md:p-6
+                        lg:p-6
+                        xl:p-6
 
-                    w-32
-                    sm:w-40
-                    md:w-56
-                    lg:w-56
-                    xl:w-56
-                "
+                        w-32
+                        sm:w-40
+                        md:w-56
+                        lg:w-56
+                        xl:w-56
+                    "
                 >
                     <div>
                         <FaDraftingCompass color="#777777" size="4rem" />
                     </div>
                     <h2
                         className="
+                            font-thin tracking-wide
                             text-center
                             text-sm md:text-base lg:text-base xl:text-base
                         "
@@ -128,32 +131,33 @@ function ServicesBox2() {
 
                 <div
                     className="
-                    flex flex-col justify-center items-center
-                    text-second
-                    shadow-xl
-                    rounded-lg
-                    bg-white
-                    p-4
-                    sm:p-4
-                    md:p-6
-                    lg:p-6
-                    xl:p-6
+                        flex flex-col justify-center items-center
+                        text-second
+                        shadow-xl
+                        rounded-lg
+                        bg-white
+                        p-4
+                        sm:p-4
+                        md:p-6
+                        lg:p-6
+                        xl:p-6
 
-                    w-32
-                    sm:w-40
-                    md:w-56
-                    lg:w-56
-                    xl:w-56
-                "
+                        w-32
+                        sm:w-40
+                        md:w-56
+                        lg:w-56
+                        xl:w-56
+                    "
                 >
                     <div>
                         <FaUsers color="#777777" size="4rem" />
                     </div>
                     <h2
                         className="
-                        text-center
-                        text-sm md:text-base lg:text-base xl:text-base
-                    "
+                            font-thin tracking-wide
+                            text-center
+                            text-sm md:text-base lg:text-base xl:text-base
+                        "
                     >
                         Consultoria
                     </h2>
@@ -162,24 +166,24 @@ function ServicesBox2() {
 
                 <div
                     className="
-                    flex flex-col justify-center items-center
-                    text-second
-                    shadow-xl
-                    rounded-lg
-                    bg-white
+                        flex flex-col justify-center items-center
+                        text-second
+                        shadow-xl
+                        rounded-lg
+                        bg-white
 
-                    p-4
-                    sm:p-4
-                    md:p-6
-                    lg:p-6
-                    xl:p-6
+                        p-4
+                        sm:p-4
+                        md:p-6
+                        lg:p-6
+                        xl:p-6
 
-                    w-32
-                    sm:w-40
-                    md:w-56
-                    lg:w-56
-                    xl:w-56
-                "
+                        w-32
+                        sm:w-40
+                        md:w-56
+                        lg:w-56
+                        xl:w-56
+                    "
                 >
                     <div>
                         <img
@@ -192,6 +196,7 @@ function ServicesBox2() {
                     </div>
                     <h2
                         className="
+                            font-thin tracking-wide
                             text-center
                             text-sm md:text-base lg:text-base xl:text-base
                         "
@@ -231,6 +236,7 @@ function ServicesBox2() {
                     </div>
                     <h2
                         className="
+                            font-thin tracking-wide
                             text-center
                             text-sm md:text-base lg:text-base xl:text-base
                         "

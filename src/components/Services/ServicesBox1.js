@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../styles/output.css';
 
-import casa1 from '../../images/services/Casa1.svg';
-import casa2 from '../../images/services/Casa2.svg';
-import casa3 from '../../images/services/Casa3.svg';
+import house1 from '../../images/services/Casa1.svg';
+import house2 from '../../images/services/Casa2.svg';
+import house3 from '../../images/services/Casa3.svg';
 
 function ServicesBox1(){
     return (
@@ -11,7 +11,7 @@ function ServicesBox1(){
             id="services-box-1"
             className="
                 bg-bg_gray
-                p-8
+                pb-12
             "
             >
                 <div
@@ -22,35 +22,76 @@ function ServicesBox1(){
                     "
                 >
                     <div className="border-2 w-84 h-auto shadow-2xl m-6 bg-white">
-                        <img className="w-full" src={casa1} alt="" />
+                        <img  src={house1} alt="house-1" />
                         <div className="p-4">
-                            <div className="text-center font-bold text-lg p-2">
+                            <div 
+                                className="
+                                    p-2
+                                    text-center font-bold 
+                                    text-base
+                                    sm:text-base md:text-base lg:text-base xl:text-lg
+                                "
+                            >
                                 Titulo
                             </div>
-                            <div className=" text-base">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium cum cupiditate officiis autem accusantium, assumenda delectus magnam, sunt nesciunt placeat a optio dolorem aspernatur exercitationem fuga quasi asperiores aut!
+                            <div 
+                                className=" 
+                                    font-thin tracking-wide
+                                    text-sm 
+                                    sm:text-sm md:text-sm lg:text-sm xl:text-base
+                                "
+                            >
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium cum cupiditate officiis autem accusantium, assumenda delectus magnam
                             </div>
                         </div>
                     </div>
                     <div className="border-2 w-84 h-auto shadow-2xl m-6 bg-white">
-                        <img className="w-full" src={casa2} alt="" />
+                        <img src={house2} alt="house-2" />
                         <div className="p-4">
-                            <div className="text-center font-bold text-lg p-2">
+                            <div 
+                                className="
+                                    p-2
+                                    text-center font-bold
+                                    text-base
+                                    sm:text-base md:text-base lg:text-base xl:text-lg
+                                "
+                            >
                                 Titulo
                             </div>
-                            <div className=" text-base">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium cum cupiditate officiis autem accusantium, assumenda delectus magnam, sunt nesciunt placeat a optio dolorem aspernatur exercitationem fuga quasi asperiores aut!
-                            </div>                         </div>
+                            <div 
+                                className="
+                                    font-thin tracking-wide
+                                    text-sm
+                                    sm:text-sm md:text-sm lg:text-sm xl:text-base
+                                "
+                            >
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium cum cupiditate officiis autem accusantium, assumenda delectus magnam
+                            </div>                         
+                        </div>
                     </div>
                     <div className="border-2 w-84 h-auto shadow-2xl m-6 bg-white" >
-                        <img className="w-full" src={casa3} alt="" />
+                        <img src={house3} alt="house-3" />
                         <div className="p-4">
-                            <div className="text-center font-bold text-lg p-2">
+                            <div 
+                                className="
+                                    p-2
+                                    text-center font-bold
+                                    text-base
+                                    sm:text-base md:text-base lg:text-base xl:text-lg
+                                "
+                            >
                                 Titulo
                             </div>
-                            <div className=" text-base">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium cum cupiditate officiis autem accusantium, assumenda delectus magnam, sunt nesciunt placeat a optio dolorem aspernatur exercitationem fuga quasi asperiores aut!
-                            </div>                         </div>
+                            <div 
+                                className="
+                                    font-thin tracking-wide
+                                    text-sm
+                                    sm:text-sm md:text-sm lg:text-sm xl:text-base
+                                "
+                            >
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium cum cupiditate officiis autem accusantium, assumenda delectus magnam
+                            </div>                         
+                        </div>
                     </div>
                 </div>
             </div>
