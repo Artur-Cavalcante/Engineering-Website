@@ -1,0 +1,25 @@
+{
+  "short_name": "Ione Cavalcante Enhenharia",
+  "name": "Ione Cavalcante Enhenharia",
+  "icons": [
+    {
+      "src": "IoneCavalcanteEngineeringLogoNegativeWithoutBackground.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "IoneCavalcanteEngineeringLogoWithoutBackground.png",
+      "type": "image/png",
+      "sizes": "171x157"
+    },
+    {
+      "src": "IoneCavalcanteEngineeringLogoWithBackground.png",
+      "type": "image/png",
+      "sizes": "171x157"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

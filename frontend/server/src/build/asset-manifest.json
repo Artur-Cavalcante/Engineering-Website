@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f2b189d6.chunk.css",
+    "main.js": "/static/js/main.587708d4.chunk.js",
+    "main.js.map": "/static/js/main.587708d4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1a51184c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1a51184c.js.map",
+    "static/js/2.628c97eb.chunk.js": "/static/js/2.628c97eb.chunk.js",
+    "static/js/2.628c97eb.chunk.js.map": "/static/js/2.628c97eb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4af620677258e999edf5022dfec58cce.js": "/precache-manifest.4af620677258e999edf5022dfec58cce.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f2b189d6.chunk.css.map": "/static/css/main.f2b189d6.chunk.css.map",
+    "static/js/2.628c97eb.chunk.js.LICENSE.txt": "/static/js/2.628c97eb.chunk.js.LICENSE.txt",
+    "static/media/Auditoria.svg": "/static/media/Auditoria.0f72f33b.svg",
+    "static/media/Casa1.svg": "/static/media/Casa1.218094c0.svg",
+    "static/media/Casa2.svg": "/static/media/Casa2.a50a637c.svg",
+    "static/media/Casa3.svg": "/static/media/Casa3.8c443554.svg",
+    "static/media/Licitacao.svg": "/static/media/Licitacao.a564ae62.svg",
+    "static/media/LogoNegativaWithName.svg": "/static/media/LogoNegativaWithName.a9e61f56.svg",
+    "static/media/LogoWithLogoName.svg": "/static/media/LogoWithLogoName.a54996e7.svg",
+    "static/media/home.svg": "/static/media/home.f4c1f27e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a51184c.js",
+    "static/js/2.628c97eb.chunk.js",
+    "static/css/main.f2b189d6.chunk.css",
+    "static/js/main.587708d4.chunk.js"
+  ]
+}
