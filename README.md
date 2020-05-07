@@ -9,9 +9,9 @@
 </div>
 
 ---
-### This website is hosped in Umber.com, and your api server too, it which handle with send e-mail from website in section contact. It receives contact data throught request HTTP from website, and re-send to a personal e-mail.  
+#### This website is hosped in Umber.com, and your api server too, it which handle with send e-mail from website in section contact. It receives contact data throught request HTTP from website, and re-send to a personal e-mail.  
 
-### Services:
+#### Website Services:
 
 * Residential and Commercial Reforms
 * Building Projects
@@ -19,15 +19,6 @@
 * Consultancy
 * Bidding
 * Audit
-
-### Contact:
-
-* Instagram:
-* @eng.ionecavalcante
-* Number Phone:
-* +55 (79) 99626-8563
-* E-mail:
-* eng.ionecavalcante@hotmail.com
 
 #### [Ione Cavalcante Engineering](https://ionecavalcanteengenharia.com.br)
 
