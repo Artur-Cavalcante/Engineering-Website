@@ -1,14 +1,13 @@
 {
-  "name": "backend-ione-cavalcante-engineering",
+  "name": "ione-cavalcante-engineering-backend",
   "version": "1.0.0",
   "description": "Backend Server from Website Ione Cavalcante Engineering",
   "main": "index.js",
-  "repository": "https://github.com/Artur-Cavalcante/ione-cavalcante-engineering-server",
+  "repository": "https://github.com/Artur-Cavalcante/ione-cavalcante-engineering/backend",
   "author": "Artur-Cavalcante",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "server": "node ./src/index.js",
 	  "dev": "nodemon ./src/index.js",
 	  "start": "node ./src/index.js"
   },
