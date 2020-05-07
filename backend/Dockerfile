@@ -1,6 +1,6 @@
 FROM node:10
 
-WORKDIR /usr/app
+WORKDIR /usr/app/backend
 
 COPY package.json ./
 
@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD [ "yarn", "server" ]
+CMD [ "yarn", "start" ]
