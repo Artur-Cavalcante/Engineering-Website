@@ -1,9 +1,9 @@
 {
-  "name": "ione-cavalcante-engineering",
+  "name": "ione-cavalcante-engineering-frontend",
   "version": "1.0.0",
-  "description": "Contruction Civil Website",
+  "description": "Frontend from Website Ione Cavalcante Engineering",
   "main": "index.js",
-  "repository": "https://github.com/Artur-Cavalcante/ione-cavalcante-engineering",
+  "repository": "https://github.com/Artur-Cavalcante/ione-cavalcante-engineering/frontend",
   "author": "Artur-Cavalcante",
   "license": "MIT",
   "private": false,
