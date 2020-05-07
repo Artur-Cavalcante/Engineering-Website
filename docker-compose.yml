@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ionecavalcante-engineering-backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+  ionecavalcante-engineering-frontend:
+    build: ./frontend/server
+    ports:
+      - "3333:3333"
