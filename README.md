@@ -23,11 +23,11 @@
 ### Contact:
 
 * Instagram:
-* * @eng.ionecavalcante
+* @eng.ionecavalcante
 * Number Phone:
-* * +55 (79) 99626-8563
+* +55 (79) 99626-8563
 * E-mail:
-* * eng.ionecavalcante@hotmail.com
+* eng.ionecavalcante@hotmail.com
 
 #### [Ione Cavalcante Engineering](https://ionecavalcanteengenharia.com.br)
 
