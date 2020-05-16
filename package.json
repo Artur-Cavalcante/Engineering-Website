@@ -6,6 +6,9 @@
   "author": "Artur-Cavalcante",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "commit": "git-cz"
+  },
   "frontend_dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -19,9 +22,21 @@
     "tailwindcss": "1.2.0",
     "yarn": "1.22.4"
   },
-  "backend_dependencies":{
+  "backend_dependencies": {
     "cors": "2.8.5",
     "express": "4.17.1",
     "nodemailer": "6.4.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5"
   }
 }
